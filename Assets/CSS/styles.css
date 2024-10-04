@@ -1,49 +1,151 @@
-body {
-    background-color: rgba(248, 126, 4, 0.5);
-    color: white;
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
-    padding: 2rem;
-    background-image: url('../Resources/Images/Ignarts.png');
-    background-repeat: repeat;
-    background-position: left top, right top;
-    background-size: contain;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1d1f21;
+    color: #eaeaea;
+    line-height: 1.6;
+    text-align: center;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
     display: flex;
     justify-content: center;
+    align-items: baseline;
+    padding: 1rem 2rem;
 }
 
-.content-container {
-    background-color: white;
-    color: black;
-    width: 80%;
-    max-width: 1200px;
-    padding: 2rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.logo{
+    display: flex;
+    gap: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #eaeaea;
+    font-weight: bold;
+    padding-right: 2rem;
 }
 
-.content-mincontainer
-{
-    background-color: rgb(190, 239, 244);
-    color: black;
-    width: 80%;
-    max-width: 1200px;
-    padding: 2rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.logo img {
+    width: 1rem;
+    height: auto;
 }
 
-h1 {
-    color: blue;
+nav ul {
+    display: flex;
+    list-style: none;
 }
 
-#especialP1 {
-    color: green;
+nav ul li {
+    margin-left: 1rem;
 }
 
-#especialP2 {
-    color: red;
+nav ul li a {
+    color: #eaeaea;
+    text-decoration: none;
+    font-size: 1rem;
+    
 }
 
-.imagesSpecial {
-    height: 3rem;
-    width: 3rem;
+nav ul li a:hover {
+    color: #f0b427;
+}
+
+footer{
+    color: #eaeaea70;
+}
+
+.intro-text{
+    background-color: #333;
+    padding: 1rem 2rem;
+    border-radius: 0.7rem;
+    margin: 1rem 0;
+    text-align: center;
+    display: inline-block;
+}
+
+.main{
+    background-color: tomato;
+    width: 70%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-title{
+    background-color: rgba(125, 211, 130, 0.797);
+    width: 60%;
+    height: auto;
+    padding: 1rem 2rem;
+    margin: 0.5rem 0rem;
+    
+    justify-content: left;
+    text-align: justify;
+}
+
+.section{
+    background-color: orange;
+    width: 60%;
+    height: auto;
+    margin: 1rem 0;
+    padding: 1rem 2rem;
+
+    text-align: center;
+    line-height: 1.5rem;
+    text-indent: 1.5rem;
+}
+
+a.links {
+    color: #e573ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a.links:hover {
+    color: #ff99ff;
+}
+
+h2{
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-thickness: 0.2rem;
+    text-decoration-color: rgb(82,82,82);
+
+    text-align: justify;
+
+    margin: 0.7rem 0rem;
+}
+
+.button {
+    background-color: #60e2d9;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 0.7rem;
+    font-weight: bold;
+    margin-top: 20px;
+
+    display: inline-block;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: rgb(60, 146, 136);
+}
+
+p{
+    text-align: justify;
 }
