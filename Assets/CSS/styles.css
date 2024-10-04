@@ -1,0 +1,49 @@
+body {
+    background-color: rgba(248, 126, 4, 0.5);
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 2rem;
+    background-image: url('../Resources/Images/Ignarts.png');
+    background-repeat: repeat;
+    background-position: left top, right top;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+}
+
+.content-container {
+    background-color: white;
+    color: black;
+    width: 80%;
+    max-width: 1200px;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.content-mincontainer
+{
+    background-color: rgb(190, 239, 244);
+    color: black;
+    width: 80%;
+    max-width: 1200px;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: blue;
+}
+
+#especialP1 {
+    color: green;
+}
+
+#especialP2 {
+    color: red;
+}
+
+.imagesSpecial {
+    height: 3rem;
+    width: 3rem;
+}
