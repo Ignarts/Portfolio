@@ -115,6 +115,15 @@ nav ul li a:hover {
     border-radius: 2rem;
 }
 
+.blank{
+    width: 20rem;
+    height: 15rem;
+    margin: 1rem 1rem;
+    padding: 1rem 2rem;
+
+    background-color: #33333300;
+}
+
 .project-preview img {
     width: 100%;
     height: auto;
