@@ -59,10 +59,19 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #f0b427;
+    text-decoration: underline;
 }
 
 footer{
     color: #eaeaea70;
+    margin: 1rem;
+    padding: 1rem 0;
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .intro-text{
@@ -75,7 +84,6 @@ footer{
 }
 
 .main{
-    background-color: tomato;
     width: 70%;
     height: auto;
 
@@ -86,7 +94,6 @@ footer{
 }
 
 .section-title{
-    background-color: rgba(125, 211, 130, 0.797);
     width: 60%;
     height: auto;
     padding: 1rem 2rem;
@@ -96,7 +103,6 @@ footer{
 }
 
 .section{
-    background-color: orange;
     width: 60%;
     height: auto;
     margin: 1rem 0;
