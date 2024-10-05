@@ -5,7 +5,6 @@
 }
 
 .main{
-    background-color: tomato;
     width: 70%;
     height: auto;
 
@@ -75,8 +74,7 @@ nav ul li a:hover {
 .section-title{
     width: 60%;
     height: auto;
-    padding: 1rem 2rem;
-    margin: 0.5rem 0rem;
+    padding: 0rem 2rem;
     
     justify-content: center;
 }
@@ -93,10 +91,8 @@ nav ul li a:hover {
 }
 
 .projects{
-    background-color: blue;
     width: 60%;
     height: auto;
-    margin: 1rem 0;
 
     display: flex;
     flex-direction: row;
@@ -104,18 +100,45 @@ nav ul li a:hover {
     align-items: center;
 }
 
-.project-preview{
-    background-color: green;
+.project-preview {
     width: 20rem;
     height: 15rem;
     margin: 1rem 1rem;
     padding: 1rem 2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: justify;
+
+    background-color: #333;
+    border-radius: 2rem;
+}
+
+.project-preview img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+p{
+    font-size: 0.7rem;
+    text-align: justify;
 }
 
 h2{
     font-size: 1.3rem;
     font-weight: bold;
     text-align: justify;
+}
 
-    margin: 0.7rem 0rem;
+h3{
+    padding: 0.5rem 0;
+
+    font-size: 1rem;
+    text-align: justify;
+
+    text-decoration: underline;
+    text-decoration-color: rgb(82,82,82);
+    text-decoration-thickness: 0.15rem;
 }
