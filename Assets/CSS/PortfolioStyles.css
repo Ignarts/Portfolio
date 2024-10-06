@@ -35,6 +35,18 @@ header {
     padding: 1rem 2rem;
 }
 
+footer{
+    color: #eaeaea70;
+    margin: 1rem;
+    padding: 1rem 0;
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .logo{
     display: flex;
     gap: 5px;
