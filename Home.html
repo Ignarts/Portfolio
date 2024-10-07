@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ignacio Meléndez - Home</title>
+    <title>Ignacio Meléndez - Portfolio</title>
     <!-- This is the icon -->
     <link rel="icon" href="Assets/Resources/Images/mano.png" type="image/x-icon">
     <link rel="stylesheet" href="Assets/CSS/HomeStyles.css">
@@ -15,12 +15,14 @@
         <nav>
             <ul>
                 <li>
-                    <p class="logo"><img src="Assets/Resources/Images/mano.png" alt="Logo"> Ignacio
-                        Meléndez</p>
+                    <button onclick="toggleSection('home')" class="logo empty-Button empty-Dark" id="home">
+                        <img src="Assets/Resources/Images/mano.png" alt="Logo">
+                        Ignacio Meléndez
+                    </button>
                 </li>
-                <li><button onclick="toggleSection('portfolio')">Portfolio</button></li>
-                <li><a href="#blog" class="a-Dark">Blog</a></li>
-                <li><a href="#contact" class="a-Dark">Contact</a></li>
+                <li><button onclick="toggleSection('portfolio')" class="empty-Button empty-Dark" id="portfolio">Portfolio</button></li>
+                <li><button onclick="toggleSection('portfolio')" class="empty-Button empty-Dark" id="blog">Blog</button></li>
+                <li><button onclick="toggleSection('portfolio')" class="empty-Button empty-Dark" id="contact">Contact</button></li>
                 <li><button onclick="toggleMode()" class="lightMode" id="modeButton">
                         <img src="Assets/Resources/Images/brightness-high.svg" alt="mode" id="modeImage">
                     </button></li>
@@ -30,7 +32,8 @@
     </header>
 
     <main class="main">
-        <section id="section-Home" class="main">
+        <!-- This is the Home section -->
+        <article id="section-Home">
             <strong class="intro-text" id="intro">Hello, I'm an game developer and a videogame fan!</strong>
             <section class="section-title">
                 <h1>Ignacio Meléndez</h1>
@@ -81,11 +84,51 @@
                     </ul>
                 </nav>
             </section>
-        </section>
+        </article>
 
-        <section id="section-Portfolio">
-            <p>Hello</p>
-        </section>
+        <!-- This is the Portfolio section -->
+        <article id="section-Portfolio">
+            <section class="section-title">
+                <h2>Works</h2>
+            </section>
+            <article class="projects">
+                <section class="project-preview">
+                    <img src="Assets/Resources/Images/Gallery-03.jpg" alt="racerloop">
+                    <h3>Racerloop</h3>
+                    <p class="project-preview-info">A spaceship multiplayer game available on EPIC STORE.</p>
+                </section>
+                
+                <section class="project-preview">
+                    <img src="Assets/Resources/OttersHell/Gameplay.png" alt="racerloop">
+                    <h3>Otter's Hell</h3>
+                    <p class="project-preview-info">A Roguelite game of otters vs. hamsters.</p>
+                </section>
+                
+                <section class="project-preview">
+                    <img src="Assets/Resources/GoblinsGold/GoblinClicker.png" alt="goblin" class="goblin">
+                    <h3>Goblin's Gold</h3>
+                    <p class="project-preview-info">A clicker game with RPG systems and too much goblins.</p>
+                </section>
+            </article>
+    
+            <section class="section-title">
+                <h2>Personal Projects</h2>
+            </section>
+    
+            <article class="projects">
+                <section class="project-preview">
+                    <img src="Assets/Resources/GoblinsGold/GoblinClicker.png" alt="goblin" class="goblin">
+                    <h3>Goblin's Gold</h3>
+                    <p class="project-preview-info">A clicker game with RPG systems and too much goblins.</p>
+                </section>
+                
+                <section class="blank">
+                </section>
+    
+                <section class="blank">
+                </section>
+            </article>
+        </article>
 
     </main>
 

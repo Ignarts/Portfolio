@@ -1,5 +1,10 @@
 let isLightMode = false;
 
+document.addEventListener('DOMContentLoaded', (event) => {
+    isLightMode = true;
+    toggleMode();
+});
+
 const toggleMode = () => {
     if (isLightMode) {
         ChangeToDarkMode();
@@ -16,11 +21,11 @@ const ChangeToLightMode = () => {
     document.body.classList.remove('body-Dark');
     document.body.classList.add('body-Light');
 
-    // Change nav links to light
-    const navLinks = document.querySelectorAll('nav ul li a');
-    navLinks.forEach(link => {
-        link.classList.remove('a-Dark');
-        link.classList.add('a-Light');
+    // Change nav buttons to light
+    const emptyButtons = document.querySelectorAll('.empty-Button');
+    emptyButtons.forEach(button => {
+        button.classList.remove('empty-Dark');
+        button.classList.add('empty-Light');
     });
 
     // Change footer to light
@@ -39,11 +44,11 @@ const ChangeToDarkMode = () => {
     document.body.classList.add('body-Dark');
     document.body.classList.remove('body-Light');
 
-    // Change nav links to dark
-    const navLinks = document.querySelectorAll('nav ul li a');
-    navLinks.forEach(link => {
-        link.classList.add('a-Dark');
-        link.classList.remove('a-Light');
+    // Change nav buttons to dark
+    const emptyButtons = document.querySelectorAll('.empty-Button');
+    emptyButtons.forEach(button => {
+        button.classList.remove('empty-Light');
+        button.classList.add('empty-Dark');
     });
 
     // Change footer to dark
