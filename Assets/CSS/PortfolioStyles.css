@@ -32,7 +32,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: baseline;
-    padding: 1rem 2rem;
+    padding: 0rem 2rem 2rem 0rem;
 }
 
 footer{
@@ -191,4 +191,53 @@ h3{
     text-decoration: underline;
     text-decoration-color: rgb(82,82,82);
     text-decoration-thickness: 0.15rem;
+}
+.lightMode{
+    background-color: #f4c556;
+    border: none;
+    border-radius: 0.4rem;
+    padding: .4rem .45rem;
+    margin: -2rem 5rem;
+
+    transition: background-color 0.5s ease;
+}
+
+.lightMode:hover{
+    background-color: #d77e1f;
+
+    transition: background-color 0.5s ease;
+}
+
+.darkMode{
+    background-color: #ff99ff;
+    border: none;
+    border-radius: 0.4rem;
+    padding: .4rem .45rem;
+    margin: -2rem 5rem;
+
+    transition: background-color 0.5s ease;
+}
+
+.darkMode:hover{
+    background-color: #a056b0;
+
+    transition: background-color 0.5s ease;
+}
+
+.lightMode img{
+    rotate: 90deg;
+}
+
+.darkMode img{
+    rotate: -90deg;
+}
+
+.rotate-90 {
+    transform: rotate(90deg);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.rotate-Negative90 {
+    transform: rotate(-90deg);
+    transition: transform 0.5s ease, opacity 0.5s ease;
 }

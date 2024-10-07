@@ -14,64 +14,77 @@
     <header>
         <nav>
             <ul>
-                <li><p class="logo"><img src="Assets/Resources/Images/mano.png" alt="Logo"> Ignacio
-                        Meléndez</p></li>
-                <li><a href="Portfolio.html">Portfolio</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <p class="logo"><img src="Assets/Resources/Images/mano.png" alt="Logo"> Ignacio
+                        Meléndez</p>
+                </li>
+                <li><button onclick="toggleSection('portfolio')">Portfolio</button></li>
+                <li><a href="#blog" class="a-Dark">Blog</a></li>
+                <li><a href="#contact" class="a-Dark">Contact</a></li>
                 <li><button onclick="toggleMode()" class="lightMode" id="modeButton">
-                    <img src="Assets/Resources/Images/brightness-high.svg" alt="mode" id="modeImage">
-                </button></li>
+                        <img src="Assets/Resources/Images/brightness-high.svg" alt="mode" id="modeImage">
+                    </button></li>
             </ul>
         </nav>
-        
+
     </header>
 
     <main class="main">
-        <strong class="intro-text">Hello, I'm an game developer and a videogame fan!</strong>
-        <section class="section-title">
-            <h1>Ignacio Meléndez</h1>
-            <h3 class="subtitle">Game Developer with Unity</h3>
+        <section id="section-Home" class="main">
+            <strong class="intro-text" id="intro">Hello, I'm an game developer and a videogame fan!</strong>
+            <section class="section-title">
+                <h1>Ignacio Meléndez</h1>
+                <h3 class="subtitle">Game Developer with Unity</h3>
+            </section>
+            <section class="section">
+                <h2>WORK</h2>
+                <p id="colorElement"><strong>Ignacio Meléndez</strong> is a professional developer with 2 years of
+                    experience in building
+                    applications using <strong>Unity</strong> and <strong>C#</strong>. During this time, he has been
+                    involved
+                    in several notable projects.</p>
+
+                <p>He served as the lead programmer, project manager, and producer for a <strong>Roguelite</strong>
+                    game,
+                    managing a team of 8 people. Additionally, he worked as a gameplay and UI/UX interfaces programmer
+                    for a
+                    multiplayer spaceship racing game called
+                    <a href="https://store.epicgames.com/es-ES/p/racerloop-4d3ab2" class="links"
+                        target="_blank">Racerloop</a>
+                    , collaborating with a team of over 15 members.
+                    This project, available on the <i>EPIC Games</i> platform, also involved contributions to
+                    multiplayer
+                    systems.
+                </p>
+
+                <p>He is well-versed in version control practices, utilizing tools such as Git, Git Extensions, GitHub,
+                    and
+                    Plastic. Known for his organization, discipline, and teamwork, he excels at code documentation,
+                    technical
+                    problem-solving, and game performance optimization.</p>
+
+                <button class="button" onclick="window.location.href='Portfolio.html'">My Portfolio</button>
+            </section>
+
+            <section class="section">
+                <h2>LINKS</h2>
+                <nav>
+                    <ul>
+                        <li><a href="mailto:ignaciomelendezuriz@gmail.com"><img
+                                    src="Assets/Resources/Images/envelope-fill.svg" alt="mailto"></a></li>
+                        <li><a href="https://x.com/ignartsvg" target="_blank"><img
+                                    src="Assets/Resources/Images/twitter-x.svg" alt="twitter"></a></li>
+                        <li><a href="https://www.linkedin.com/in/ignaciomelendezuriz/" target="_blank"><img
+                                    src="Assets/Resources/Images/linkedin.svg" alt="linkedin"></a></li>
+                        <li><a href="https://github.com/Ignarts" target="_blank"><img
+                                    src="Assets/Resources/Images/github.svg" alt="github"></a></li>
+                    </ul>
+                </nav>
+            </section>
         </section>
-        <section class="section">
-            <h2>WORK</h2>
-            <p id="colorElement"><strong>Ignacio Meléndez</strong> is a professional developer with 2 years of experience in building
-                applications using <strong>Unity</strong> and <strong>C#</strong>. During this time, he has been
-                involved
-                in several notable projects.</p>
 
-            <p>He served as the lead programmer, project manager, and producer for a <strong>Roguelite</strong> game,
-                managing a team of 8 people. Additionally, he worked as a gameplay and UI/UX interfaces programmer for a
-                multiplayer spaceship racing game called
-                <a href="https://store.epicgames.com/es-ES/p/racerloop-4d3ab2" class="links"
-                    target="_blank">Racerloop</a>
-                , collaborating with a team of over 15 members.
-                This project, available on the <i>EPIC Games</i> platform, also involved contributions to multiplayer
-                systems.
-            </p>
-
-            <p>He is well-versed in version control practices, utilizing tools such as Git, Git Extensions, GitHub, and
-                Plastic. Known for his organization, discipline, and teamwork, he excels at code documentation,
-                technical
-                problem-solving, and game performance optimization.</p>
-
-            <button class="button" onclick="window.location.href='Portfolio.html'">My Portfolio</button>
-        </section>
-
-        <section class="section">
-            <h2>LINKS</h2>
-            <nav>
-                <ul>
-                    <li><a href="mailto:ignaciomelendezuriz@gmail.com"><img
-                                src="Assets/Resources/Images/envelope-fill.svg" alt="mailto"></a></li>
-                    <li><a href="https://x.com/ignartsvg" target="_blank"><img
-                                src="Assets/Resources/Images/twitter-x.svg" alt="twitter"></a></li>
-                    <li><a href="https://www.linkedin.com/in/ignaciomelendezuriz/" target="_blank"><img
-                                src="Assets/Resources/Images/linkedin.svg" alt="linkedin"></a></li>
-                    <li><a href="https://github.com/Ignarts" target="_blank"><img
-                                src="Assets/Resources/Images/github.svg" alt="github"></a></li>
-                </ul>
-            </nav>
+        <section id="section-Portfolio">
+            <p>Hello</p>
         </section>
 
     </main>
@@ -81,6 +94,7 @@
     </footer>
 
     <script src="Assets/JS/scriptTests.js"></script>
+    <script src="Assets/JS/sectionSelector.js"></script>
 
 </body>
 
