@@ -7,8 +7,6 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #1d1f21;
-    color: #eaeaea;
     line-height: 1.6;
     text-align: center;
     padding: 20px;
@@ -17,6 +15,16 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.body-Dark{
+    background-color: #1d1f21;
+    color: #eaeaea;
+}
+
+.body-Light{
+    background-color: #ffffff;
+    color: #333;
 }
 
 header {
@@ -74,7 +82,6 @@ footer{
 }
 
 .intro-text{
-    background-color: #333;
     padding: 1rem 2rem;
     border-radius: 0.7rem;
     margin: 1rem 0;
@@ -187,7 +194,6 @@ p{
     margin: -2rem 5rem;
 
     transition: background-color 0.5s ease;
-    transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
 .lightMode:hover{
@@ -204,7 +210,6 @@ p{
     margin: -2rem 5rem;
 
     transition: background-color 0.5s ease;
-    transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
 .darkMode:hover{
@@ -213,10 +218,20 @@ p{
     transition: background-color 0.5s ease;
 }
 
-.rotate-90 {
-    transform: rotate(90deg);
+.lightMode img{
+    rotate: 90deg;
 }
 
-.rotate-0 {
-    transform: rotate(0deg);
+.darkMode img{
+    rotate: -90deg;
+}
+
+.rotate-90 {
+    transform: rotate(90deg);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.rotate-Negative90 {
+    transform: rotate(-90deg);
+    transition: transform 0.5s ease, opacity 0.5s ease;
 }

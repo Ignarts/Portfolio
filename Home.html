@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="Assets/CSS/HomeStyles.css">
 </head>
 
-<body>
+<body class="body-Dark">
     <header>
         <nav>
             <ul>
@@ -19,7 +19,9 @@
                 <li><a href="Portfolio.html">Portfolio</a></li>
                 <li><a href="#blog">Blog</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><button onclick="toggleMode()" class="mode rotate-0" id="modeButton"><img src="Assets/Resources/Images/brightness-high.svg" alt="lightMode"></button></li>
+                <li><button onclick="toggleMode()" class="lightMode" id="modeButton">
+                    <img src="Assets/Resources/Images/brightness-high.svg" alt="mode" id="modeImage">
+                </button></li>
             </ul>
         </nav>
         

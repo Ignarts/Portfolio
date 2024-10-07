@@ -1,46 +1,52 @@
 let isLightMode = false;
 
 const toggleMode = () => {
-    const body = document.body;
-    const modeButton = document.getElementById('modeButton');
-    const textElements = document.querySelectorAll('h1, h2, h3, p, strong, .intro-text, .subtitle');
-    const links = document.querySelectorAll('a');
-
     if (isLightMode) {
-        // Cambiar a modo oscuro
-        body.style.backgroundColor = '#333';
-        textElements.forEach(element => {
-            element.style.color = 'white';
-        });
-        links.forEach(link => {
-            link.style.color = '#e573ff';
-        });
-
-        // Animar el botón y cambiar la imagen
-        modeButton.classList.add('rotate-90');
-        setTimeout(() => {
-            modeButton.src = 'Assets/Resources/Images/moon.svg';
-            modeButton.classList.remove('rotate-90');
-            modeButton.classList.add('rotate-0');
-        }, 500);
+        ChangeToDarkMode();
+        AnimateButtonToDarkMode();
     } else {
-        // Cambiar a modo claro
-        body.style.backgroundColor = 'white';
-        textElements.forEach(element => {
-            element.style.color = 'black';
-        });
-        links.forEach(link => {
-            link.style.color = 'blue';
-        });
-
-        // Animar el botón y cambiar la imagen
-        modeButton.classList.add('rotate-90');
-        setTimeout(() => {
-            modeButton.src = 'Assets/Resources/Images/brightness-high.svg';
-            modeButton.classList.remove('rotate-90');
-            modeButton.classList.add('rotate-0');
-        }, 500);
+        ChangeToLightMode();
+        AnimateButtonToLightMode();
     }
+    console.log('Mode changed to: ' + (isLightMode ? 'Light' : 'Dark'));
+}
 
-    isLightMode = !isLightMode;
+const ChangeToLightMode = () => {
+    document.body.classList.remove('body-Dark');
+    document.body.classList.add('body-Light');
+}
+
+const ChangeToDarkMode = () => {
+    document.body.classList.add('body-Dark');
+    document.body.classList.remove('body-Light');
+}
+
+const AnimateButtonToLightMode = () => {
+    const modeButton = document.getElementById('modeButton');
+    const modeImage = document.getElementById('modeImage');
+
+    modeImage.src = 'Assets/Resources/Images/moon.svg';
+    isLightMode = true;
+
+    modeImage.classList.remove('rotate-Negative90');
+    modeImage.classList.add('rotate-90');
+    modeButton.classList.remove('lightMode');
+    modeButton.classList.add('darkMode');
+
+    isLightMode = true;
+}
+
+const AnimateButtonToDarkMode = () => {
+    const modeButton = document.getElementById('modeButton');
+    const modeImage = document.getElementById('modeImage');
+
+    modeImage.src = 'Assets/Resources/Images/brightness-high.svg';
+    isLightMode = false;
+
+    modeImage.classList.remove('rotate-90');
+    modeImage.classList.add('rotate-Negative90');
+    modeButton.classList.add('lightMode');
+    modeButton.classList.remove('darkMode');
+
+    isLightMode = false;
 }
