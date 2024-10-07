@@ -14,13 +14,15 @@
     <header>
         <nav>
             <ul>
-                <li><a href="Home.html" class="logo"><img src="Assets/Resources/Images/mano.png" alt="Logo"> Ignacio
-                        Meléndez</a></li>
+                <li><p class="logo"><img src="Assets/Resources/Images/mano.png" alt="Logo"> Ignacio
+                        Meléndez</p></li>
                 <li><a href="Portfolio.html">Portfolio</a></li>
                 <li><a href="#blog">Blog</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><button onclick="toggleMode()" class="mode rotate-0" id="modeButton"><img src="Assets/Resources/Images/brightness-high.svg" alt="lightMode"></button></li>
             </ul>
         </nav>
+        
     </header>
 
     <main class="main">
@@ -31,7 +33,7 @@
         </section>
         <section class="section">
             <h2>WORK</h2>
-            <p><strong>Ignacio Meléndez</strong> is a professional developer with 2 years of experience in building
+            <p id="colorElement"><strong>Ignacio Meléndez</strong> is a professional developer with 2 years of experience in building
                 applications using <strong>Unity</strong> and <strong>C#</strong>. During this time, he has been
                 involved
                 in several notable projects.</p>
@@ -75,6 +77,8 @@
     <footer>
         <p>&copy; 2024 Ignacio Meléndez. All Rights Reserved.</p>
     </footer>
+
+    <script src="Assets/JS/scriptTests.js"></script>
 
 </body>
 

@@ -83,6 +83,18 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
+.active {
+    background-color: #f0b427;
+    color: #1d1f21;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+
+    padding: 0rem .6rem;
+    display: inline-block;
+
+    font-weight: bold;
+}
+
 .section-title{
     width: 60%;
     height: auto;
@@ -108,7 +120,7 @@ nav ul li a:hover {
 
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center;
 }
 
@@ -125,6 +137,14 @@ nav ul li a:hover {
 
     background-color: #333;
     border-radius: 2rem;
+
+    transition: width 0.5s ease;
+}
+
+.project-preview:hover{
+    width: 25rem;
+    transition: width 0.5s ease;
+    cursor: pointer; 
 }
 
 .blank{
@@ -133,18 +153,27 @@ nav ul li a:hover {
     margin: 1rem 1rem;
     padding: 1rem 2rem;
 
-    background-color: #33333300;
+    background-color: rgba(51, 51, 51, 0);
 }
 
 .project-preview img {
     width: 100%;
     height: auto;
     border-radius: 1rem;
+    object-fit: cover;
+    align-self: center;
+}
+
+.project-preview img.goblin{
+    width: 40%;
+    height: auto;
+    border-radius: 1rem;
+    object-fit: cover;
 }
 
 p{
-    font-size: 0.7rem;
-    text-align: justify;
+    font-size: 0.8rem;
+    text-align: left;
 }
 
 h2{
