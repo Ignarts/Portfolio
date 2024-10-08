@@ -11,7 +11,7 @@
 
 .project-preview {
     width: 20rem;
-    height: 15rem;
+    height: 18rem;
     margin: 1rem 1rem;
     padding: 1rem 2rem;
 
@@ -22,23 +22,18 @@
 
     border-radius: 2rem;
 
-    transition: width 0.5s ease;
+    transition: transform 0.5s ease;
 }
 
 .project-preview:hover{
-    width: 25rem;
-    transition: width 0.5s ease;
+    transform: scale(1.15);
+    transition: transform 0.5s ease;
     cursor: pointer; 
-}
-
-.project-preview-info{
-    font-size: 0.8rem;
-    text-align: left;
 }
 
 .blank{
     width: 20rem;
-    height: 15rem;
+    height: 18rem;
     margin: 1rem 1rem;
     padding: 1rem 2rem;
 
@@ -48,8 +43,46 @@
 .project-preview img {
     width: 100%;
     height: auto;
-    max-height: 4rem;
-    object-fit: contain;
-    border-radius: 1.5rem; 
-    margin-bottom: 1rem;
+    max-height: 200px;
+    object-fit: cover; 
+}
+
+.img-container{
+    background-color: tomato;
+    width: 100%;
+    height: 60%;
+}
+
+.img-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1.2rem;
+}
+
+.project-info{
+    background-color: blue;
+    width: 100%;
+    height: 60%;
+    margin: .5rem 0;
+    overflow:hidden;
+    
+    display: flex;
+    align-items: left;
+    text-align: justify;
+}
+
+.project-info h3{
+    color: white;
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+.project-info p{
+    font-size: 0.85rem;
+    color: white;
+    padding: 0.5rem;
+    width: 100%;
+    height: 6rem;
+    overflow: hidden;
 }
