@@ -1,0 +1,165 @@
+/*Light and Dark Mode*/
+
+.lightMode{
+    background-color: #f4c556;
+    border: none;
+    border-radius: 0.4rem;
+    padding: .4rem .45rem;
+    margin: -2rem 5rem;
+
+    transition: background-color 0.5s ease;
+}
+
+.lightMode:hover{
+    background-color: #d77e1f;
+
+    transition: background-color 0.5s ease;
+}
+
+.darkMode{
+    background-color: #64b4e6;
+    border: none;
+    border-radius: 0.4rem;
+    padding: .4rem .45rem;
+    margin: -2rem 5rem;
+
+    transition: background-color 0.5s ease;
+}
+
+.darkMode:hover{
+    background-color: #0477be;
+
+    transition: background-color 0.5s ease;
+}
+
+.lightMode img{
+    rotate: 90deg;
+}
+
+.darkMode img{
+    rotate: -90deg;
+}
+
+.rotate-90 {
+    transform: rotate(90deg);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.rotate-Negative90 {
+    transform: rotate(-90deg);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+/* Body */
+
+.body-Dark{
+    background-color: #1d1f21;
+    color: #eaeaea;
+
+    transition: background-color 0.3s ease;
+}
+
+.body-Light{
+    background-color: #f2efe9;
+    color: #1d3557;
+
+    transition: background-color 0.3s ease;
+}
+
+/* Footer */
+
+.footer-Dark{
+    color: #eaeaea70;
+    transition: background-color 0.3s ease;
+}
+
+.footer-Light{
+    color: #19191970;
+    transition: background-color 0.3s ease;
+}
+
+/* Intro */
+
+.intro-Dark{
+    border: 2px solid rgb(255, 255, 255, 0.18);
+    box-shadow: 0px 0px 30px rgb(227,228,237,0.37);
+
+    transition: background-color 0.5s ease;
+}
+
+.intro-Light{
+    border: 2px solid #f0b42771;
+    box-shadow: 0px 0px 30px rgba(176, 174, 107, 0.37);
+
+    transition: background-color 0.5s ease;
+}
+
+/* Links */
+.link-Dark{
+    color: #f0b427;
+}
+
+.link-Dark:hover{
+    color: #8d6a17;
+}
+
+.link-Light{
+    color: #64b4e6;
+}
+
+.link-Light:hover{
+    color: #0477be;
+}
+
+/* Buttons */
+.button-Dark{
+    background-color: #f0b427;
+}
+
+.button-Dark:hover{
+    background-color: #9a741c;
+}
+
+.button-Light{
+    background-color:#64b4e6;
+}
+
+.button-Light:hover{
+    background-color:#0477be;
+}
+
+/* Project Preview */
+
+.preview-Dark{
+    background-color: #333;
+}
+
+.preview-Light{
+    background-color: #c4bdaf;
+}
+
+/* Empty */
+
+.empty-Dark{
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+.empty-Light{
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+.empty-Selected{
+    text-decoration: none;
+}
+
+.empty-Dark-Selected{
+    color: #f0b427;
+    transition: background-color 0.3s ease;
+}
+
+.empty-Light-Selected{
+    color: #64b4e6;
+    transition: background-color 0.3s ease;
+}
