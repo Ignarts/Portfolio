@@ -37,19 +37,34 @@ section {
 }
 
 .section-Contact{
-    background-color: tomato;
+    backdrop-filter: blur(30px);
+    border-radius: 2rem;
+    border: 2px solid #f0b42771;
+    box-shadow: 0px 0px 30px rgba(176, 174, 107, 0.37);
 }
 
 .contact-Title{
     font-size: 1.5rem;
     font-weight: bold;
 
-    margin: 0.4rem 0rem;
+    margin: 2rem 0rem;
 }
 
 form{
-    background-color: yellow;
     width: 100%;
+
+    margin: 0rem 0rem 2rem 0rem;
+    padding-left: 2rem;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+}
+
+form p{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #eaeaea;
+    padding-top: 1rem;
 }
 
 form textarea{
@@ -60,8 +75,50 @@ form textarea{
     outline: none;
     transition: border 0.3s ease;
 
-    width: 100%;
-    height: auto;
+    width: 90%;
+    height: 10rem;
     resize: none;
     box-sizing: border-box;
+    border: 2px solid #f0b42771;
+}
+
+form textarea:hover{
+    border: 2px solid #f0b427;
+    outline: none;
+}
+
+form textarea:focus{
+    border: 2px solid #ba850a;
+    outline: none;
+}
+
+form input{
+    width: 90%;
+    height: 2rem;
+
+    text-align: justify;
+    padding-left: 0.7rem;
+
+    border-radius: .4rem;
+    border: 2px solid #f0b42771;
+}
+
+form input:hover{
+    border: 2px solid #f0b427;
+    outline: none;
+}
+
+form input:focus{
+    border: 2px solid #ba850a;
+    outline: none;
+}
+
+.form-Button{
+    width: 30%;
+    height: 2rem;
+    margin-bottom: 2rem;
+
+    border-radius: 2rem;
+
+    font-weight: bold;
 }

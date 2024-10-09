@@ -114,6 +114,7 @@
 /* Buttons */
 .button-Dark{
     background-color: #f0b427;
+    border: none;
 }
 
 .button-Dark:hover{
@@ -122,6 +123,7 @@
 
 .button-Light{
     background-color:#64b4e6;
+    border: none;
 }
 
 .button-Light:hover{
