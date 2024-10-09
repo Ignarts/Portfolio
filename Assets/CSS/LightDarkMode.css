@@ -132,10 +132,14 @@
 
 .preview-Dark{
     background-color: #333;
+    border-color: #f0b427;
+    color: white;
 }
 
 .preview-Light{
     background-color: #c4bdaf;
+    border-color: #333;
+    color: #1d3557;
 }
 
 /* Empty */
