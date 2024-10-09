@@ -9,6 +9,7 @@
     <link rel="icon" href="Assets/Resources/Images/mano.png" type="image/x-icon">
     <link rel="stylesheet" href="Assets/CSS/HomeStyles.css">
     <link rel="stylesheet" href="Assets/CSS/PortfolioStyles.css">
+    <link rel="stylesheet" href="Assets/CSS/Contact.css">
     <link rel="stylesheet" href="Assets/CSS/LightDarkMode.css">
 </head>
 
@@ -24,7 +25,7 @@
                 </li>
                 <li><button onclick="toggleSection('portfolio')" class="empty-Button empty-Dark" id="portfolio">Portfolio</button></li>
                 <li><button onclick="toggleSection('portfolio')" class="empty-Button empty-Dark" id="blog">Blog</button></li>
-                <li><button onclick="toggleSection('portfolio')" class="empty-Button empty-Dark" id="contact">Contact</button></li>
+                <li><button onclick="toggleSection('contact')" class="empty-Button empty-Dark" id="contact">Contact</button></li>
                 <li><button onclick="toggleMode()" class="lightMode" id="modeButton">
                         <img src="Assets/Resources/Images/brightness-high.svg" alt="mode" id="modeImage">
                     </button></li>
@@ -138,6 +139,45 @@
                 <section class="blank">
                 </section>
             </article>
+        </section>
+
+        <!-- This is the Contact section -->
+        <section id="section-Contact">
+            <section class="section-Contact">
+                <h2 class="contact-Title">Get in Touch</h2>
+                <p class="contact-Subtitle">I’m here to help. Whether you have a question, feedback,
+                    or just want to say hello, feel free to drop a message.</p>
+                <section>
+                    <form>
+                        <p>Name</p>
+                        <input type="text" name="Name" id="" placeholder="Please enter your name...">
+                        <p>Email</p>
+                        <input type="text" name="Email" id="" placeholder="Please enter your email...">
+                        <p>Explain</p>
+                        <textarea name="Explain" id="" placeholder="Write here your thoughts..."></textarea>
+                    </form>
+                    
+                    <button class="form-Button button-Dark">Send</button>
+                </section>
+            </section>
+
+            <section class="section">
+                <h2>LINKS</h2>
+                <section class="links-Social">
+                    <nav>
+                        <ul>
+                            <li><a href="mailto:ignaciomelendezuriz@gmail.com">
+                                    <img src="Assets/Resources/Images/envelope-fill.svg" alt="mailto"></a></li>
+                            <li><a href="https://x.com/ignartsvg" target="_blank">
+                                    <img src="Assets/Resources/Images/twitter-x.svg" alt="twitter"></a></li>
+                            <li><a href="https://www.linkedin.com/in/ignaciomelendezuriz/" target="_blank">
+                                    <img src="Assets/Resources/Images/linkedin.svg" alt="linkedin"></a></li>
+                            <li><a href="https://github.com/Ignarts" target="_blank">
+                                    <img src="Assets/Resources/Images/github.svg" alt="github"></a></li>
+                        </ul>
+                    </nav>
+                </section>
+            </section>
         </section>
 
     </main>
