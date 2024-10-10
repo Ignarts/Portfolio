@@ -71,24 +71,6 @@
 
                 <button class="button" onclick="toggleSection('portfolio')">My Portfolio</button>
             </section>
-
-            <section class="section">
-                <h2>LINKS</h2>
-                <section class="links-Social">
-                    <nav>
-                        <ul>
-                            <li><a href="mailto:ignaciomelendezuriz@gmail.com">
-                                    <img src="Assets/Resources/Images/envelope-fill.svg" alt="mailto"></a></li>
-                            <li><a href="https://x.com/ignartsvg" target="_blank">
-                                    <img src="Assets/Resources/Images/twitter-x.svg" alt="twitter"></a></li>
-                            <li><a href="https://www.linkedin.com/in/ignaciomelendezuriz/" target="_blank">
-                                    <img src="Assets/Resources/Images/linkedin.svg" alt="linkedin"></a></li>
-                            <li><a href="https://github.com/Ignarts" target="_blank">
-                                    <img src="Assets/Resources/Images/github.svg" alt="github"></a></li>
-                        </ul>
-                    </nav>
-                </section>
-            </section>
         </section>
 
         <!-- This is the Portfolio section -->
@@ -96,49 +78,12 @@
             <section class="section-title">
                 <h2 class="h2-Projects">Works</h2>
             </section>
-            <article class="projects">
-                <section class="project-preview preview-Dark">
-                    <section class="img-container">
-                        <img src="Assets/Resources/Images/Gallery-03.jpg" alt="racerloop">
-                    </section>
-
-                    <section class="project-info">
-                        <h3>Racerloop</h3>
-                        <p>A spaceship multiplayer game available on EPIC STORE.</p>
-                    </section>
-                </section>
-                
-                <section class="project-preview preview-Dark">
-                    <section class="img-container">
-                        <img src="Assets/Resources/OttersHell/OHGameplay_Card.png" alt="ottersHell">
-                    </section>
-
-                    <section class="project-info">
-                        <h3>Otter's Hell</h3>
-                        <p>A Roguelite game of otters vs. hamsters.</p>
-                    </section>
-                </section>
-            </article>
-    
+            <article class="projects grid-container" id="works-projects"></article>
+            
             <section class="section-title">
                 <h2 class="h2-Projects">Personal Projects</h2>
             </section>
-    
-            <article class="projects">
-                <section class="project-preview preview-Dark">
-                    <section class="img-container">
-                        <img src="Assets/Resources/GoblinsGold/GoblinClicker_Card.png" alt="goblin">
-                    </section>
-
-                    <section class="project-info">
-                        <h3>Goblin's Gold</h3>
-                        <p>A clicker game with RPG systems and too much goblins.</p>
-                    </section>
-                </section>
-                
-                <section class="blank">
-                </section>
-            </article>
+            <article class="projects grid-container" id="personal-projects"></article>
         </section>
 
         <!-- This is the Contact section -->
@@ -161,22 +106,14 @@
                 </section>
             </section>
 
-            <section class="section">
-                <h2>LINKS</h2>
-                <section class="links-Social">
-                    <nav>
-                        <ul>
-                            <li><a href="mailto:ignaciomelendezuriz@gmail.com">
-                                    <img src="Assets/Resources/Images/envelope-fill.svg" alt="mailto"></a></li>
-                            <li><a href="https://x.com/ignartsvg" target="_blank">
-                                    <img src="Assets/Resources/Images/twitter-x.svg" alt="twitter"></a></li>
-                            <li><a href="https://www.linkedin.com/in/ignaciomelendezuriz/" target="_blank">
-                                    <img src="Assets/Resources/Images/linkedin.svg" alt="linkedin"></a></li>
-                            <li><a href="https://github.com/Ignarts" target="_blank">
-                                    <img src="Assets/Resources/Images/github.svg" alt="github"></a></li>
-                        </ul>
-                    </nav>
-                </section>
+        </section>
+
+        <section class="section-links">
+            <h2>LINKS</h2>
+            <section class="links-Social">
+                <nav>
+                    <ul id="social-links"></ul>
+                </nav>
             </section>
         </section>
 
@@ -188,6 +125,8 @@
 
     <script src="Assets/JS/LightDarkMode.js"></script>
     <script src="Assets/JS/sectionSelector.js"></script>
+    <script src="Assets/JS/PortfolioCards.js"></script>
+    <script src="Assets/JS/SocialMediaLinks.js"></script>
 
 </body>
 

@@ -82,3 +82,9 @@
     padding: 0;
     line-height: 1.4;
 }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}

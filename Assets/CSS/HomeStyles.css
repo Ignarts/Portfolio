@@ -131,6 +131,17 @@ section {
     text-indent: 1.5rem;
 }
 
+.section-links{
+    width: 52%;
+    height: auto;
+    margin: 1rem 0;
+    padding: 1rem 2rem;
+
+    text-align: center;
+    line-height: 1.5rem;
+    text-indent: 1.5rem;
+}
+
 a.links {
     text-decoration: underline;
     text-decoration-thickness: 0.09rem;
