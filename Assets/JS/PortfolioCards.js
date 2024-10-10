@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
             description: 'A clicker game with RPG systems and too much goblins.',
             imgSrc: 'Assets/Resources/GoblinsGold/GoblinClicker_Card.png',
             imgAlt: 'goblin'
-        }
+        },
     ];
 
     function createProject(project) {
