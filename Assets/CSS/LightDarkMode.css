@@ -144,6 +144,58 @@
     color: #1d3557;
 }
 
+/* Blog */
+
+.blog-Card-Dark{
+    background-color: #333;
+    border-color: #f0b427;
+}
+
+.blog-Card-Light{
+    background-color: #e7e3dd;
+    border-color: #333;
+}
+
+.blog-Card-Light-Before::before {
+    background: linear-gradient(45deg, #64b4e6, #e7e3dd);
+}
+
+.blog-Card-Dark-Before::before {
+    background: linear-gradient(45deg, #f0b427, #333);
+}
+
+.card-Tag-Dark{
+    background-color: #f0b427;
+}
+
+.card-Tag-Light{
+    background-color: #64b4e6;
+}
+
+.blog-h4-Dark{
+    color: #BBBBBB;
+}
+
+.blog-h4-Light{
+    color: #333;
+}
+
+.blog-h2-Dark{
+    color: #f0b427;
+}
+
+.blog-h2-Light{
+    color: #64b4e6;
+}
+
+.read-More-Dark{
+    color: #f0b427;
+}
+
+.read-More-Light{
+    color: #64b4e6;
+}
+
 /* Empty */
 
 .empty-Dark{

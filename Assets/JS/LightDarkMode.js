@@ -63,7 +63,47 @@ const ChangeToLightMode = () => {
         preview.classList.add('preview-Light');
         preview.classList.remove('preview-Dark');
     });
+
+    // Change the blog articles to light
+    const blogArticles = document.querySelectorAll('.blog-card');
+    blogArticles.forEach(article => {
+        article.classList.add('blog-Card-Light');
+        article.classList.remove('blog-Card-Dark');
+        // Change the blog-card::before to light
+        article.classList.add('blog-Card-Light-Before');
+        article.classList.remove('blog-Card-Dark-Before');
+    });
+
+    // Change the blog article tags to light
+    const blogTags = document.querySelectorAll('.blog-card-tag');
+    blogTags.forEach(tag => {
+        tag.classList.add('card-Tag-Light');
+        tag.classList.remove('card-Tag-Dark');
+    });
+
+    // Change the blog's h4 to light
+    const blogDates = document.querySelectorAll('.blog-card-content h4');
+    blogDates.forEach(date => {
+        date.classList.add('blog-h4-Light');
+        date.classList.remove('blog-h4-Dark');
+    });
+
+    // Change the blog's h2 to light
+    const blogTitles = document.querySelectorAll('.blog-card-content h2');
+    blogTitles.forEach(title => {
+        title.classList.add('blog-h2-Light');
+        title.classList.remove('blog-h2-Dark');
+    });
+
+    // Change the read more links to light
+    const blogLinks = document.querySelectorAll('.read-more');
+    blogLinks.forEach(link => {
+        link.classList.add('read-More-Light');
+        link.classList.remove('read-More-Dark');
+    });
 }
+
+// Change to Dark Mode
 
 const ChangeToDarkMode = () => {
     // Change body style to dark
@@ -111,6 +151,44 @@ const ChangeToDarkMode = () => {
     projectPreviews.forEach(preview => {
         preview.classList.add('preview-Dark');
         preview.classList.remove('preview-Light');
+    });
+
+    // Change the blog articles to dark
+    const blogArticles = document.querySelectorAll('.blog-card');
+    blogArticles.forEach(article => {
+        article.classList.add('blog-Card-Dark');
+        article.classList.remove('blog-Card-Light');
+        // Change the blog-card::before to dark
+        article.classList.add('blog-Card-Dark-Before');
+        article.classList.remove('blog-Card-Light-Before');
+    });
+
+    // Change the blog article tags to dark
+    const blogTags = document.querySelectorAll('.blog-card-tag');
+    blogTags.forEach(tag => {
+        tag.classList.add('card-Tag-Dark');
+        tag.classList.remove('card-Tag-Light');
+    });
+
+    // Change the blog's h4 to dark
+    const blogDates = document.querySelectorAll('.blog-card-content h4');
+    blogDates.forEach(date => {
+        date.classList.add('blog-h4-Dark');
+        date.classList.remove('blog-h4-Light');
+    });
+
+    // Change the blog's h2 to dark
+    const blogTitles = document.querySelectorAll('.blog-card-content h2');
+    blogTitles.forEach(title => {
+        title.classList.add('blog-h2-Dark');
+        title.classList.remove('blog-h2-Light');
+    });
+
+    // Change the read more links to dark
+    const blogLinks = document.querySelectorAll('.read-more');
+    blogLinks.forEach(link => {
+        link.classList.add('read-More-Dark');
+        link.classList.remove('read-More-Light');
     });
 }
 

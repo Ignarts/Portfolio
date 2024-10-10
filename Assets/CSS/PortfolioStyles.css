@@ -10,7 +10,7 @@
 }
 
 .project-preview {
-    width: 20rem;
+    width: 25rem;
     height: 18rem;
     margin: 1rem 1rem;
     padding: 1rem 2rem;
@@ -83,8 +83,8 @@
     line-height: 1.4;
 }
 
-.grid-container {
+.portfolio-grid-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }

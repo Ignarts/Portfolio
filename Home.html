@@ -9,8 +9,9 @@
     <link rel="icon" href="Assets/Resources/Images/mano.png" type="image/x-icon">
     <link rel="stylesheet" href="Assets/CSS/HomeStyles.css">
     <link rel="stylesheet" href="Assets/CSS/PortfolioStyles.css">
-    <link rel="stylesheet" href="Assets/CSS/Contact.css">
     <link rel="stylesheet" href="Assets/CSS/LightDarkMode.css">
+    <link rel="stylesheet" href="Assets/CSS/Blog.css">
+    <link rel="stylesheet" href="Assets/CSS/Contact.css">
 </head>
 
 <body class="body-Dark">
@@ -83,7 +84,15 @@
             <section class="section-title">
                 <h2 class="h2-Projects">Personal Projects</h2>
             </section>
-            <article class="projects grid-container" id="personal-projects"></article>
+            <article class="projects portfolio-grid-container" id="personal-projects"></article>
+        </section>
+
+        <!-- This is the Blog section -->
+        <section class="section-Blog" id="section-Blog">
+            <h2>Articles</h2>
+            <section class="blog-grid-container" id="blog-articles-container">
+                <!-- Here will be spawned the articles for the blog -->
+            </section>
         </section>
 
         <!-- This is the Contact section -->
@@ -105,7 +114,6 @@
                     <button class="form-Button button-Dark">Send</button>
                 </section>
             </section>
-
         </section>
 
         <section class="section-links">
@@ -123,10 +131,11 @@
         <p>&copy; 2024 Ignacio Meléndez. All Rights Reserved.</p>
     </footer>
 
-    <script src="Assets/JS/LightDarkMode.js"></script>
-    <script src="Assets/JS/sectionSelector.js"></script>
+    <script src="Assets/JS/SectionSelector.js"></script>
     <script src="Assets/JS/PortfolioCards.js"></script>
     <script src="Assets/JS/SocialMediaLinks.js"></script>
+    <script src="Assets/JS/BlogArticleCreator.js"></script>
+    <script src="Assets/JS/LightDarkMode.js"></script>
 
 </body>
 
