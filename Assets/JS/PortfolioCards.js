@@ -25,15 +25,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function createProject(project) {
         return `
-            <section class="project-preview preview-Dark">
-                <section class="img-container">
+            <article class="blog-card">
+                <div class="blog-card-img">
                     <img src="${project.imgSrc}" alt="${project.imgAlt}">
-                </section>
-                <section class="project-info">
-                    <h3>${project.title}</h3>
+                </div>
+                <div class="blog-card-content">
+                    <h4>${project.title}</h4>
                     <p>${project.description}</p>
-                </section>
-            </section>
+                </div>
+            </article>
         `;
     }
 

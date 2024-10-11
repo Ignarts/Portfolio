@@ -7,7 +7,7 @@
     text-align: left;
 }
 
-.blog-grid-container {
+.grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
