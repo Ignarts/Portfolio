@@ -31,6 +31,9 @@ header {
     justify-content: center;
     align-items: baseline;
     padding: 0rem 2rem 2rem 0rem;
+    /* position: fixed;
+    z-index: 1000;
+    top: 0; */
 }
 
 .logo{
