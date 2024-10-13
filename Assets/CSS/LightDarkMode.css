@@ -66,6 +66,18 @@
     transition: background-color 0.3s ease;
 }
 
+.header-Dark{
+    background: #33333348;
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid #f0b427;
+}
+
+.header-Light{
+    background: rgba(231, 227, 221, 0.346);
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid #64b4e6;
+}
+
 /* Footer */
 
 .footer-Dark{

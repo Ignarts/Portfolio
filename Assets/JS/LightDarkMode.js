@@ -21,6 +21,12 @@ const ChangeToLightMode = () => {
     document.body.classList.remove('body-Dark');
     document.body.classList.add('body-Light');
 
+
+    // Change header to light
+    const header = document.querySelector('header');
+    header.classList.add('header-Light');
+    header.classList.remove('header-Dark');
+
     // Change footer to light
     const footer = document.querySelector('footer');
     footer.classList.add('footer-Light');
@@ -128,6 +134,11 @@ const ChangeToDarkMode = () => {
     // Change body style to dark
     document.body.classList.add('body-Dark');
     document.body.classList.remove('body-Light');
+
+    // Change header to dark
+    const header = document.querySelector('header');
+    header.classList.add('header-Dark');
+    header.classList.remove('header-Light');
 
     // Change footer to dark
     const footer = document.querySelector('footer');
