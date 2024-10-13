@@ -101,6 +101,25 @@ const ChangeToLightMode = () => {
         link.classList.add('read-More-Light');
         link.classList.remove('read-More-Dark');
     });
+
+    // Change the Contact section to light
+    const contactSection = document.querySelector('.section-Contact');
+    contactSection.classList.add('contact-Light');
+    contactSection.classList.remove('contact-Dark');
+
+    // Change the form's Text Area to light
+    const formTextArea = document.querySelectorAll('form textarea');
+    formTextArea.forEach(textArea => {
+        textArea.classList.add('form-TextArea-Light');
+        textArea.classList.remove('form-TextArea-Dark');
+    });
+
+    // Change the form's input to light
+    const formInput = document.querySelectorAll('form input');
+    formInput.forEach(input => {
+        input.classList.add('form-Input-Light');
+        input.classList.remove('form-Input-Dark');
+    });
 }
 
 // Change to Dark Mode
@@ -189,6 +208,25 @@ const ChangeToDarkMode = () => {
     blogLinks.forEach(link => {
         link.classList.add('read-More-Dark');
         link.classList.remove('read-More-Light');
+    });
+
+    // Change the Contact section to dark
+    const contactSection = document.querySelector('.section-Contact');
+    contactSection.classList.add('contact-Dark');
+    contactSection.classList.remove('contact-Light');
+
+    // Change the form's Text Area to dark
+    const formTextArea = document.querySelectorAll('form textarea');
+    formTextArea.forEach(textArea => {
+        textArea.classList.add('form-TextArea-Dark');
+        textArea.classList.remove('form-TextArea-Light');
+    });
+
+    // Change the form's input to dark
+    const formInput = document.querySelectorAll('form input');
+    formInput.forEach(input => {
+        input.classList.add('form-Input-Dark');
+        input.classList.remove('form-Input-Light');
     });
 }
 

@@ -196,6 +196,68 @@
     color: #64b4e6;
 }
 
+/* Contact Section */
+
+.contact-Dark{
+    border: 2px solid #f0b42771;
+    box-shadow: 0px 0px 30px rgba(176, 174, 107, 0.37);
+}
+
+.contact-Light{
+    border: 2px solid #64b4e6;
+    box-shadow: 0px 0px 30px rgba(100, 180, 230, 0.37);
+}
+
+.form-TextArea-Dark{
+    border: 1px solid #ccc;
+    border: 2px solid #f0b42771;
+}
+
+.form-TextArea-Light{
+    border: 1px solid #ccc;
+    border: 2px solid #64b4e6;
+}
+
+.form-TextArea-Dark:hover{
+    border: 2px solid #f0b427;
+}
+
+.form-TextArea-Light:hover{
+    border: 2px solid #64b4e6;
+}
+
+.form-TextArea-Dark:focus{
+    border: 2px solid #ba850a;
+}
+
+.form-TextArea-Light:focus{
+    border: 2px solid #0477be;
+}
+
+.form-Input-Dark{
+    border: 2px solid #f0b42771;
+}
+
+.form-Input-Light{
+    border: 2px solid #64b4e6;
+}
+
+.form-Input-Dark:hover{
+    border: 2px solid #f0b427;
+}
+
+.form-Input-Light:hover{
+    border: 2px solid #64b4e6;
+}
+
+.form-Input-Dark:focus{
+    border: 2px solid #ba850a;
+}
+
+.form-Input-Light:focus{
+    border: 2px solid #0477be;
+}
+
 /* Empty */
 
 .empty-Dark{
