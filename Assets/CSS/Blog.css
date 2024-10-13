@@ -95,12 +95,6 @@
     align-self: flex-end;
 }
 
-.blog-card h2 {
-    margin-bottom: .5rem;
-    font-size: 1rem;
-    text-decoration: none;
-}
-
 .blog-card p{
     font-size: .8rem;
     text-align: justify;

@@ -216,6 +216,19 @@ p{
     text-align: justify;
 }
 
+.work-Experience{
+    font-size: 1rem;
+    text-align: left;
+    align-self: flex-start;
+    font-family: 'Georgia', serif;
+}
+
+.date{
+    margin-bottom: .5rem;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
 .cvImage{
     width: 30%;
     height: auto;
