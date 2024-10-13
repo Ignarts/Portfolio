@@ -35,8 +35,8 @@ document.addEventListener('DOMContentLoaded', function() {
                         <img src="${article.imgSrc}" alt="ottersHell">
                     </div>
                     <div class="blog-card-content">
-                        <h4>${article.date}</h4>
-                        <h2 class="date">${article.title}</h2>
+                        <h4 class="date">${article.date}</h4>
+                        <h2 class="card-Title">${article.title}</h2>
                         <p>${article.description}</p>
                         <a href="#" class="read-more">Read more <span>→</span></a>
                     </div>

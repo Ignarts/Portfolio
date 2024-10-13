@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <img src="${project.imgSrc}" alt="${project.imgAlt}">
                 </div>
                 <div class="blog-card-content">
-                    <h2>${project.title}</h2>
+                    <h2 class="card-Title">${project.title}</h2>
                     <p>${project.description}</p>
                 </div>
             </article>
