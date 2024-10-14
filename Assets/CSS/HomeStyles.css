@@ -36,7 +36,6 @@ header {
     position: fixed;
     z-index: 1000;
     top: 0;
-    backdrop-filter: blur(10px);
 }
 
 .header-spacer {
@@ -256,4 +255,37 @@ p{
 .opacity-100{
     opacity: 1;
     transition: opacity 0.3s ease;
+}
+
+/* Experience */
+.experience-section {
+    margin: 1.1rem 0;
+}
+
+.experience-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.experience-list li {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 2.3rem;
+    padding: 0;
+}
+
+.experience-list .year {
+    font-weight: bold;
+    text-align: left;
+    flex-basis: 10rem;
+    flex-shrink: 0;
+    text-indent: 0;
+}
+
+.experience-list .job-info {
+    flex: 1;
+    padding-left: 1rem;
+    text-align: justify;
+    text-indent: 0;
 }

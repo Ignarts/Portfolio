@@ -100,8 +100,8 @@
 }
 
 .intro-Light{
-    border: 2px solid #f0b42771;
-    box-shadow: 0px 0px 30px rgba(176, 174, 107, 0.37);
+    border: 2px solid rgb(255, 255, 255, 0.18);
+    box-shadow: 0px 0px 30px rgba(46, 46, 38, 0.37);
 
     transition: background-color 0.5s ease;
 }

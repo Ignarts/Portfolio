@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', (event) => {
-    toggleSection('contact');
+    toggleSection('home');
 });
 
 function toggleSection(section) {
