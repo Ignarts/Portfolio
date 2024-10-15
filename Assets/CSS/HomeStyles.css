@@ -320,6 +320,22 @@ p {
     .cvImage {
         width: 50%;
     }
+
+    .experience-list li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .experience-list .year {
+        flex-basis: auto;
+        font-size: 0.9rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .experience-list .job-info {
+        font-size: 0.9rem;
+        padding-left: 0;
+    }
 }
 
 @media (width < 530px) {
@@ -347,5 +363,20 @@ p {
 
     .cvImage {
         width: 70%;
+    }
+
+    .experience-list li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .experience-list .year {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .experience-list .job-info {
+        font-size: 1rem;
+        padding-left: 0;
     }
 }
