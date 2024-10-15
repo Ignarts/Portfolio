@@ -120,6 +120,24 @@
     margin: .4rem 0;
 }
 
+/* Tags configuration */
+
+.Games-Tag{
+    background-color: #f0b427;
+}
+
+.Tools-Tag{
+    background-color: #64b4e6;
+}
+
+.Unity-Tag{
+    background-color: #f04527;
+}
+
+.Devlog-Tag{
+    background-color: #27f071;
+}
+
 /* Media Queries */
 @media (width < 768px) {
     .section-Blog {

@@ -80,13 +80,6 @@ const ChangeToLightMode = () => {
         article.classList.remove('blog-Card-Dark-Before');
     });
 
-    // Change the blog article tags to light
-    const blogTags = document.querySelectorAll('.blog-card-tag');
-    blogTags.forEach(tag => {
-        tag.classList.add('card-Tag-Light');
-        tag.classList.remove('card-Tag-Dark');
-    });
-
     // Change the blog's h4 to light
     const blogDates = document.querySelectorAll('.blog-card-content h4');
     blogDates.forEach(date => {

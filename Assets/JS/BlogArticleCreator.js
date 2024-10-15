@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
             description: 'A Roguelite of otters vs hamsters',
             imgSrc: 'Assets/Resources/OttersHell/OHGameplay_Card.png',
             imgAlt: 'ottersHell',
-            type: 'Games',
+            type: 'Unity',
         },
         {
             title: 'Otter\'s Hell',
@@ -22,7 +22,15 @@ document.addEventListener('DOMContentLoaded', function() {
             description: 'A Roguelite of otters vs hamsters',
             imgSrc: 'Assets/Resources/OttersHell/OHGameplay_Card.png',
             imgAlt: 'ottersHell',
-            type: 'Games',
+            type: 'Tools',
+        },
+        {
+            title: 'Otter\'s Hell',
+            date: '10-10-2024',
+            description: 'A Roguelite of otters vs hamsters',
+            imgSrc: 'Assets/Resources/OttersHell/OHGameplay_Card.png',
+            imgAlt: 'ottersHell',
+            type: 'Devlog',
         }
     ]
 
@@ -31,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
         return `
             <article class="blog-card">
                     <div class="blog-card-img">
-                        <p class="blog-card-tag" id="colorElement"><strong>${article.type}</strong></p>
+                        <p class="blog-card-tag ${article.type}-Tag " id="colorElement"><strong>${article.type}</strong></p>
                         <img src="${article.imgSrc}" alt="ottersHell">
                     </div>
                     <div class="blog-card-content">
