@@ -5,7 +5,7 @@
     border: none;
     border-radius: 0.4rem;
     padding: .4rem .45rem;
-    margin: -2rem 5rem;
+    margin: -2rem 0rem;
 
     transition: background-color 0.5s ease;
 }
@@ -21,7 +21,7 @@
     border: none;
     border-radius: 0.4rem;
     padding: .4rem .45rem;
-    margin: -2rem 5rem;
+    margin: -2rem 0rem;
 
     transition: background-color 0.5s ease;
 }

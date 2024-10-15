@@ -4,10 +4,9 @@
     box-sizing: border-box;
 }
 
-.main{
+.main {
     width: 90%;
     height: auto;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,7 +18,6 @@ body {
     line-height: 1.6;
     text-align: center;
     padding: 20px;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -42,7 +40,7 @@ header {
     height: 3rem;
 }
 
-.logo{
+.logo {
     display: flex;
     gap: 5px;
     text-decoration: none;
@@ -81,14 +79,12 @@ nav ul li a:hover {
     border: none;
     font-weight: bold;
     cursor: pointer;
-    
     text-decoration: none;
     font-size: 1rem;
-
     align-items: center;
 }
 
-footer{
+footer {
     margin: 1rem;
     padding: 1rem 0;
     width: 70%;
@@ -99,13 +95,12 @@ footer{
     align-items: center;
 }
 
-.intro-text{
+.intro-text {
     padding: 1rem 2rem;
     border-radius: 0.7rem;
     margin: 1rem 0;
     text-align: center;
     display: inline-block;
-
     backdrop-filter: blur(30px);
 }
 
@@ -113,7 +108,6 @@ section {
     display: flex;
     width: 85%;
     height: auto;
-    
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -124,7 +118,6 @@ section {
     height: auto;
     padding: 1rem 2rem;
     margin: 0.5rem 0rem 0 0;
-    
     justify-content: flex-start;
     text-align: left;
 }
@@ -133,18 +126,16 @@ section {
     width: 60%;
     height: auto;
     padding: 0rem 2rem 2rem 0;
-
     text-align: center;
     line-height: 1.5rem;
     text-indent: 1.5rem;
 }
 
-.section-links{
+.section-links {
     width: 52%;
     height: auto;
     margin: 1rem;
     padding: 1rem 2rem;
-
     text-align: center;
     line-height: 1.5rem;
     text-indent: 1.5rem;
@@ -156,7 +147,7 @@ a.links {
     font-weight: bold;
 }
 
-.links-Social{
+.links-Social {
     display: flex;
     gap: 0rem;
     justify-content: flex-start;
@@ -176,35 +167,30 @@ h2 {
     font-weight: bold;
     text-decoration: underline;
     text-decoration-thickness: 0.2rem;
-    text-decoration-color: rgb(82,82,82);
-
+    text-decoration-color: rgb(82, 82, 82);
     text-align: left;
     align-self: flex-start;
-
     margin: 4rem 0 .4rem 0;
 }
 
-.h2-Projects{
+.h2-Projects {
     margin: 1rem 0 -1rem 0;
 }
 
-h3{
+h3 {
     padding: 0.5rem 0;
-
     font-size: 1rem;
     text-align: justify;
-
     text-decoration: underline;
-    text-decoration-color: rgb(82,82,82);
+    text-decoration-color: rgb(82, 82, 82);
     text-decoration-thickness: 0.15rem;
 }
 
-h3.subtitle{
+h3.subtitle {
     font-size: 1rem;
     font-weight: bold;
     text-align: left;
     align-self: flex-start;
-
     margin: -0.5rem 0rem;
 }
 
@@ -214,30 +200,29 @@ h3.subtitle{
     border-radius: 0.7rem;
     font-weight: bold;
     margin-top: 20px;
-
     display: inline-block;
     cursor: pointer;
 }
 
-p{
+p {
     font-size: 1rem;
     text-align: justify;
 }
 
-.work-Experience{
+.work-Experience {
     font-size: 1rem;
     text-align: left;
     align-self: flex-start;
     font-family: 'Georgia', serif;
 }
 
-.date{
+.date {
     margin-bottom: .5rem;
     font-size: 1rem;
     text-decoration: none;
 }
 
-.cvImage{
+.cvImage {
     width: 30%;
     height: auto;
     margin: 0 0;
@@ -247,12 +232,12 @@ p{
     display: none;
 }
 
-.opacity-Zero{
+.opacity-Zero {
     opacity: 0;
     transition: opacity 0.3s ease;
 }
 
-.opacity-100{
+.opacity-100 {
     opacity: 1;
     transition: opacity 0.3s ease;
 }
@@ -281,11 +266,86 @@ p{
     flex-basis: 10rem;
     flex-shrink: 0;
     text-indent: 0;
+    font-size: 0.8rem;
 }
 
 .experience-list .job-info {
+    font-size: 0.8rem;
     flex: 1;
     padding-left: 1rem;
     text-align: justify;
     text-indent: 0;
+}
+
+/* Media Queries */
+@media (width < 768px) {
+    .main {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .empty-Button{
+        font-size: .8rem;
+    }
+
+    .logo {
+        font-size: 0.8rem;
+        padding-right: 1rem;
+    }
+
+    .logo img {
+        width: 0.8rem;
+    }
+
+    nav ul {
+        flex-direction: row;
+        gap: 0.5rem;
+    }
+
+    .section-title, .section, .section-links {
+        width: 80%;
+        padding: 1rem;
+    }
+
+    footer {
+        width: 90%;
+    }
+
+    .cvImage {
+        width: 50%;
+    }
+}
+
+@media (width < 530px) {
+    body {
+        padding: 1rem;
+    }
+
+    .logo {
+        font-size: 0.6rem;
+        padding-right: 0.5rem;
+    }
+
+    .logo img {
+        width: 0.6rem;
+    }
+
+    .section-title, .section, .section-links {
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    .cvImage {
+        width: 70%;
+    }
 }
