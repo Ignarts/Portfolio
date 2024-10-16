@@ -285,15 +285,6 @@ p {
     text-indent: 0;
 }
 
-.github-Chart{
-    width: 40rem;
-    height: 10rem;
-    
-    border-radius: 2rem;
-    background-color: #ffffff00;
-    backdrop-filter: blur(30px);
-}
-
 /* Media Queries */
 @media (width < 768px) {
     .main {
@@ -359,12 +350,6 @@ p {
         font-size: 0.9rem;
         padding-left: 0;
     }
-
-    .github-Chart{
-        visibility: hidden;
-        height: 0;
-        width: 0;
-    }
 }
 
 @media (width < 530px) {
@@ -413,11 +398,5 @@ p {
     .experience-list .job-info {
         font-size: 1rem;
         padding-left: 0;
-    }
-
-    .github-Chart{
-        visibility: hidden;
-        height: 0;
-        width: 0;
     }
 }
