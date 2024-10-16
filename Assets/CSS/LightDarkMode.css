@@ -266,6 +266,13 @@
     border: 2px solid #0477be;
 }
 
+.github-Dark{
+    border: .2rem solid #f0b427;}
+
+.github-Light{
+    border: .2rem solid #64b4e6;
+}
+
 /* Empty */
 
 .empty-Dark{
