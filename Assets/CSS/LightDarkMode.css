@@ -1,10 +1,12 @@
 /*Light and Dark Mode*/
 
 .lightMode{
+    width: 1.87rem;
+    height: 1.87rem;
     background-color: #f4c556;
     border: none;
     border-radius: 0.4rem;
-    padding: .4rem .45rem;
+    padding: .45rem .45rem;
     margin: -2rem 0rem;
 
     transition: background-color 0.5s ease;
@@ -17,10 +19,12 @@
 }
 
 .darkMode{
+    width: 1.87rem;
+    height: 1.87rem;
     background-color: #64b4e6;
     border: none;
     border-radius: 0.4rem;
-    padding: .4rem .45rem;
+    padding: .45rem .45rem;
     margin: -2rem 0rem;
 
     transition: background-color 0.5s ease;

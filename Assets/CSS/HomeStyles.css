@@ -290,7 +290,7 @@ p {
         padding: 1rem;
     }
 
-    .empty-Button{
+    .empty-Button {
         font-size: .8rem;
     }
 
@@ -308,7 +308,13 @@ p {
         gap: 0.5rem;
     }
 
-    .section-title, .section, .section-links {
+    p {
+        text-align: left;
+    }
+
+    .section-title,
+    .section,
+    .section-links {
         width: 80%;
         padding: 1rem;
     }
@@ -352,7 +358,13 @@ p {
         width: 0.6rem;
     }
 
-    .section-title, .section, .section-links {
+    p {
+        text-align: center;
+    }
+
+    .section-title,
+    .section,
+    .section-links {
         width: 100%;
         padding: 0.5rem;
     }
