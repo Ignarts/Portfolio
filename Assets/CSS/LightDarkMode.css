@@ -273,6 +273,30 @@
     border: .2rem solid #64b4e6;
 }
 
+.social-Dark{
+    fill: white;
+
+    transition: fill 0.3s ease;
+}
+
+.social-Dark:hover{
+    fill: #f0b427;
+
+    transition: fill 0.3s ease;
+}
+
+.social-Light{
+    fill: #333;
+
+    transition: fill 0.3s ease;
+}
+
+.social-Light:hover{
+    fill: #64b4e6;
+
+    transition: fill 0.3s ease;
+}
+
 /* Empty */
 
 .empty-Dark{

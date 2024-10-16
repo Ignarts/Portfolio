@@ -124,6 +124,13 @@ const ChangeToLightMode = () => {
     const gitHubChart = document.getElementById('github-Chart');
     gitHubChart.classList.add('github-Light');
     gitHubChart.classList.remove('github-Dark');
+
+    // Change Social Links to light
+    const socialLinks = document.querySelectorAll('.social-icon svg');
+    socialLinks.forEach(svg => {
+        svg.classList.add('social-Light');
+        svg.classList.remove('social-Dark');
+    });
 }
 
 // Change to Dark Mode
@@ -242,6 +249,13 @@ const ChangeToDarkMode = () => {
     const gitHubChart = document.getElementById('github-Chart');
     gitHubChart.classList.add('github-Dark');
     gitHubChart.classList.remove('github-Light');
+
+    // Change Social Links to dark
+    const socialLinks = document.querySelectorAll('.social-icon svg');
+    socialLinks.forEach(svg => {
+        svg.classList.add('social-Dark');
+        svg.classList.remove('social-Light');
+    });
 }
 
 /// Animate button to show light mode
