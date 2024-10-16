@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="Assets/CSS/Blog.css">
     <link rel="stylesheet" href="Assets/CSS/Contact.css">
     <link rel="stylesheet" href="Assets/CSS/LightDarkMode.css">
+    <script src="index.js"></script>
 </head>
 
 <body class="body-Dark">
@@ -130,20 +131,19 @@
                 <p class="contact-Subtitle">I’m here to help. Whether you have a question, feedback,
                     or just want to say hello, feel free to drop a message.</p>
                 <section>
-                    <form>
+                    <form id="contact-form">
                         <p>Name</p>
-                        <input type="text" name="Name" id="" placeholder="Please enter your name...">
+                        <input type="text" name="Name" id="name" placeholder="Please enter your name...">
                         <p>Email</p>
-                        <input type="text" name="Email" id="" placeholder="Please enter your email...">
+                        <input type="text" name="Email" id="email" placeholder="Please enter your email...">
                         <p>Explain</p>
-                        <textarea name="Explain" id="" placeholder="Write here your thoughts..."></textarea>
+                        <textarea name="Explain" id="message" placeholder="Write here your thoughts..."></textarea>
                     </form>
-                    
-                    <button class="form-Button button-Dark">Send</button>
+                    <button class="form-Button button-Dark" onclick="sendEmail()">Send</button>
                 </section>
             </section>
         </section>
-
+        
         <section class="section-links">
             <h2>LINKS</h2>
             <section class="links-Social">
@@ -152,19 +152,19 @@
                 </nav>
             </section>
         </section>
-
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Ignacio Meléndez. All Rights Reserved.</p>
-    </footer>
-
-    <script src="Assets/JS/SocialMediaLinks.js"></script>
-    <script src="Assets/JS/SectionSelector.js"></script>
-    <script src="Assets/JS/PortfolioCards.js"></script>
-    <script src="Assets/JS/BlogArticleCreator.js"></script>
-    <script src="Assets/JS/LightDarkMode.js"></script>
-
+        
+        </main>
+        
+        <footer>
+            <p>&copy; 2024 Ignacio Meléndez. All Rights Reserved.</p>
+        </footer>
+        
+        <script src="Assets/JS/SocialMediaLinks.js"></script>
+        <script src="Assets/JS/SectionSelector.js"></script>
+        <script src="Assets/JS/PortfolioCards.js"></script>
+        <script src="Assets/JS/BlogArticleCreator.js"></script>
+        <script src="Assets/JS/LightDarkMode.js"></script>
+        
 </body>
 
 </html>
