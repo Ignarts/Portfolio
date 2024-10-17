@@ -1,46 +1,8 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.main {
-    width: 90%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    text-align: center;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 .container {
     justify-content: center;
     background-image: url("/Assets/Slime/Images/Background.png");
     background-size: contain;
     background-repeat: no-repeat;
-    margin-bottom: 3rem;
-}
-
-#slime-container {
-    align-self: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#slime {
-    align-self: center;
 }
 
 #stats {
@@ -56,11 +18,20 @@ body {
     background-color: tomato;
 }
 
+#slime-container {
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#slime {
+    align-self: center;
+}
+
 #controls{
-    background-color: tomato;
     width: 20rem;
-    height: 3rem;
-    margin-top: .5rem;
+    height: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
@@ -68,8 +39,30 @@ body {
 }
 
 #controls button {
-    width: 5rem;
-    margin: 5px;
+    width: 1.7rem;
+    height: 1.7rem;
     font-size: 1rem;
     cursor: pointer;
+    margin-top: -.5rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+#controls button:hover {
+    filter: brightness(0.9);
+}
+
+#controls button:nth-child(1) {
+    background-image: url('/Assets/Slime/Images/FeedButtons.png');
+}
+
+#controls button:nth-child(2) {
+    background-image: url('/Assets/Slime/Images/PlayButtons.png');
+}
+
+#controls button:nth-child(3) {
+    background-image: url('/Assets/Slime/Images/SleepButtons.png');
 }
