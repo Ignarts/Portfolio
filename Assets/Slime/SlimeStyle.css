@@ -66,3 +66,7 @@
 #controls button:nth-child(3) {
     background-image: url('/Assets/Slime/Images/SleepButtons.png');
 }
+
+.low-Brightness{
+    filter: brightness(0.5);
+}
