@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const container = document.querySelector(".container");
+    const container = document.querySelector(".chat-window");
     const bgImage = new Image();
     bgImage.src = "/Assets/Slime/Images/Background.png";
 
