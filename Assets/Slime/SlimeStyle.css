@@ -1,31 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f8ff;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
     text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
-    width: 100%;
-    margin: 0 auto;
-    padding: 20px;
+    justify-content: center;
+    background-image: url("/Assets/Slime/Images/Background.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 3rem;
 }
 
 #slime-container {
-    margin-top: 20px;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #slime {
-    width: 150px;
-}
-
-#controls button {
-    margin: 5px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
+    align-self: center;
 }
 
 #stats {
-    margin-top: 20px;
+    width: 20rem;
+    height: 3rem;
+    margin-top: .5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
     font-size: 18px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    background-color: tomato;
+}
+
+#controls{
+    background-color: tomato;
+    width: 20rem;
+    height: 3rem;
+    margin-top: .5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+
+#controls button {
+    width: 5rem;
+    margin: 5px;
+    font-size: 1rem;
+    cursor: pointer;
 }

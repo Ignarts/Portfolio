@@ -120,11 +120,6 @@ const ChangeToLightMode = () => {
         input.classList.remove('form-Input-Dark');
     });
 
-    //Change GitHub Chart to light
-    const gitHubChart = document.getElementById('github-Chart');
-    gitHubChart.classList.add('github-Light');
-    gitHubChart.classList.remove('github-Dark');
-
     // Change Social Links to light
     const socialLinks = document.querySelectorAll('.social-icon svg');
     socialLinks.forEach(svg => {
@@ -244,11 +239,6 @@ const ChangeToDarkMode = () => {
         input.classList.add('form-Input-Dark');
         input.classList.remove('form-Input-Light');
     });
-
-    //Change GitHub Chart to dark
-    const gitHubChart = document.getElementById('github-Chart');
-    gitHubChart.classList.add('github-Dark');
-    gitHubChart.classList.remove('github-Light');
 
     // Change Social Links to dark
     const socialLinks = document.querySelectorAll('.social-icon svg');

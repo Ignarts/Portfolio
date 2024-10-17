@@ -4,25 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Slime Pet Simulator</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="SlimeStyle.css">
 </head>
 <body>
     <div class="container">
-        <h1>Slime Pet Simulator</h1>
         <div id="slime-container">
             <img src="/Assets/Slime/Images/SlimeAnimation1.png" alt="Slime" id="slime">
         </div>
-        <div id="stats">
-            <p><strong>Happiness:</strong> <span id="happiness">50</span></p>
-            <p><strong>Energy:</strong> <span id="energy">50</span></p>
-        </div>
-        <div id="controls">
-            <button onclick="feedSlime()">Feed</button>
-            <button onclick="playWithSlime()">Play</button>
-            <button onclick="restSlime()">Rest</button>
-        </div>
+    </div>
+    <div id="stats">
+        <p><strong>Happiness:</strong> <span id="happiness">50</span></p>
+        <p><strong>Energy:</strong> <span id="energy">50</span></p>
+    </div>
+    <div id="controls">
+        <button onclick="feedSlime()">Feed</button>
+        <button onclick="playWithSlime()">Play</button>
+        <button onclick="restSlime()">Rest</button>
     </div>
     <script src="/Assets/Slime/Slime.js"></script>
     <script src="/Assets/Slime/SlimeAnimations.js"></script>
+    <script src="/Assets/Slime/SlimeBackground.js"></script>
 </body>
 </html>
