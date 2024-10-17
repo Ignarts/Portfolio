@@ -2,6 +2,7 @@
 let happiness = 50;
 let energy = 50;
 
+let cooldownTimer = 5000;
 let feedCooldown = false;
 let playCooldown = false;
 let restCooldown = false;
@@ -18,7 +19,7 @@ function feedSlime() {
         setTimeout(() => {
             feedCooldown = false;
             feedButton.classList.remove('low-Brightness');
-        }, 5000);
+        }, cooldownTimer);
     }
 }
 
@@ -37,7 +38,7 @@ function playWithSlime() {
             setTimeout(() => {
                 playCooldown = false;
                 playButton.classList.remove('low-Brightness');
-            }, 5000);
+            }, cooldownTimer);
         } else {
             alert("Slime is too tired to play!");
         }
@@ -58,7 +59,7 @@ function restSlime() {
         setTimeout(() => {
             restCooldown = false;
             restButton.classList.remove('low-Brightness');
-        }, 5000);
+        }, cooldownTimer);
     }
 }
 
