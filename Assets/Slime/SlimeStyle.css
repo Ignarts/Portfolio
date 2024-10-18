@@ -98,15 +98,15 @@
 }
 
 .chat-controls button:nth-child(1) {
-    background-image: url('/Assets/Slime/Images/FeedButtons.png');
+    background-image: url('Assets/Slime/Images/FeedButtons.png');
 }
 
 .chat-controls button:nth-child(2) {
-    background-image: url('/Assets/Slime/Images/PlayButtons.png');
+    background-image: url('Assets/Slime/Images/PlayButtons.png');
 }
 
 .chat-controls button:nth-child(3) {
-    background-image: url('/Assets/Slime/Images/SleepButtons.png');
+    background-image: url('Assets/Slime/Images/SleepButtons.png');
 }
 
 .low-Brightness{
