@@ -1,9 +1,8 @@
 .chat-window {
     position: fixed;
     bottom: 0;
-    left: 10;
-    width: 20rem;
-    height: 23rem;
+    right: 0;
+    margin: 1rem;
     background-color: transparent;
     overflow: hidden;
     z-index: 1000;
@@ -24,30 +23,37 @@
     justify-content: center;
 }
 
-.chat-controls {
-    padding-bottom: 1rem;
+.stats {
+    padding-top: 0rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     display: flex;
-    justify-content: space-around;
-}
-
-.container {
-    justify-content: center;
-    background-image: url("/Assets/Slime/Images/Background.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-#stats {
-    width: 20rem;
-    height: 3rem;
-    margin-top: .5rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    font-size: 18px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    position: absolute;
     align-items: center;
-    background-color: tomato;
+    top: 0;
+    margin-top: .5rem;
+}
+
+.stats p {
+    margin: 0;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 33.33%;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.stats img {
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-right: 0.1rem;
 }
 
 #slime-container {
@@ -61,12 +67,23 @@
     align-self: center;
 }
 
+.chat-controls {
+    position:absolute;
+    bottom: 0;
+    margin-bottom: 0.8rem;
+    width: 100%;
+    align-self: center;
+    
+    display: flex;
+    justify-content:space-evenly;
+    text-align: center;
+}
+
 .chat-controls button {
     width: 1.7rem;
     height: 1.7rem;
     font-size: 1rem;
     cursor: pointer;
-    margin-top: -.5rem;
     background-size: cover;
     background-repeat: no-repeat;
     background-color: transparent;
