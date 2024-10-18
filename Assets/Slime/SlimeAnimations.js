@@ -1,8 +1,8 @@
 const slimeImages = [
-    "/Assets/Slime/Images/SlimeAnimation1.png",
-    "/Assets/Slime/Images/SlimeAnimation2.png",
-    "/Assets/Slime/Images/SlimeAnimation3.png",
-    "/Assets/Slime/Images/SlimeAnimation4.png"
+    "Assets/Slime/Images/SlimeAnimation1.png",
+    "Assets/Slime/Images/SlimeAnimation2.png",
+    "Assets/Slime/Images/SlimeAnimation3.png",
+    "Assets/Slime/Images/SlimeAnimation4.png"
 ]
 
 let currentImageIndex = 0;
