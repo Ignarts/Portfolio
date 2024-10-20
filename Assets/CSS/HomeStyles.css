@@ -116,10 +116,23 @@ section {
 .section-title {
     width: 60%;
     height: auto;
-    padding: 1rem 2rem;
+    padding: 1rem 12rem;
     margin: 0.5rem 0rem 0 0;
-    justify-content: flex-start;
-    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    flex-direction: row;
+    text-align: center;
+}
+
+.title-Info{
+    flex-grow: 1;
+}
+
+.title-Image img {
+    width: 7rem;
+    height: auto;
+    border-radius: 50%;
 }
 
 .section {
@@ -132,7 +145,7 @@ section {
 }
 
 .section-links {
-    width: 52%;
+    width: 51%;
     height: auto;
     margin: 1rem;
     padding: 1rem 2rem;
