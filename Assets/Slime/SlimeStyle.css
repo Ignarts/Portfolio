@@ -74,7 +74,7 @@
 .chat-controls {
     position:absolute;
     bottom: 0;
-    margin-bottom: 0.8rem;
+    margin-bottom: .4rem;
     width: 100%;
     align-self: center;
     
@@ -84,8 +84,8 @@
 }
 
 .chat-controls button {
-    width: 1.7rem;
-    height: 1.7rem;
+    width: 2rem;
+    height: 2rem;
     font-size: 1rem;
     cursor: pointer;
     background-size: cover;
