@@ -23,8 +23,8 @@
                 <li><button class="empty-Button empty-Dark" id="portfolio">Portfolio</button></li>
                 <li><button class="empty-Button empty-Dark" id="blog">Blog</button></li>
                 <li><button onclick="toggleMode()" class="lightMode" id="modeButton">
-                    <img src="" alt="mode" id="modeImage">
-                </button></li>
+                        <img src="" alt="mode" id="modeImage">
+                    </button></li>
             </ul>
         </nav>
 
@@ -33,24 +33,49 @@
     <div class="header-spacer"></div>
 
     <main>
-        <div id="article">
+        <article>
             <section class="title" id="title">
-                <h1>Article Title</h1>
-                <h2>This is the Subtitle for the article</h2>
-                <h5>Published: Day-Month-Year</h5>
+                <section class="title-content">
+                    <h1>Article Title</h1>
+                    <h2>This is the Subtitle for the article</h2>
+                    <h5>Published: Day-Month-Year</h5>
+                </section>
                 <img src="../Assets/Resources/OttersHell/Gameplay.png" alt="project-Image">
             </section>
-        </div>
 
-        <div class="table-Content" id="Table of Content">
-            <h2>Table of Content</h2>
-            <ul>
-                <li><a href="#section1">Section 1</a></li>
-                <li><a href="#section2">Section 2</a></li>
-                <li><a href="#section3">Section 3</a></li>
-                <li><a href="#section4">Section 4</a></li>
-            </ul>
-        </div>
+            <section class="article" id="article">
+                <section class="article-content">
+                    <p>Lorem ipsum <strong>dolor</strong> sit amet, <a href="" class="link">consectetur</a> adipiscing
+                        elit, sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                    <section class="text-with-image">
+                        <p>Here is a text on the left. This text is not special itself, but it has a photo/image on the side,
+                            so this texts is not alone and sad. It has a friend, a photo/image. This photo/image is
+                            a photo/image of a project, a project that I made. This project is a game, a game that I
+                            made.
+                        </p>
+                        
+                        <img src="../Assets/Resources/OttersHell/Gameplay.png" alt="project-Image">
+                    </section>
+
+                    <section class="text-with-image">
+                        <img src="../Assets/Resources/OttersHell/Gameplay.png" alt="project-Image">
+
+                        <p>Here is a text on the right. This text is not special itself, but it has a photo/image on the side,
+                            so this texts is not alone and sad. It has a friend, a photo/image. This photo/image is
+                            a photo/image of a project, a project that I made. This project is a game, a game that I
+                            made.
+                        </p>
+                    </section>
+                </section>
+
+
+            </section>
+        </article>
 
     </main>
 
@@ -61,4 +86,5 @@
     <script src="./Scripts/ArticleToggleMode.js"></script>
 
 </body>
+
 </html>
