@@ -25,17 +25,27 @@ const ChangeToLightMode = () => {
     const header = document.querySelector('header');
     header.classList.add('header-Light');
     header.classList.remove('header-Dark');
+
+    // Change title to light
+    const titleText = document.getElementById('title');
+    titleText.classList.add('title-Light');
+    titleText.classList.remove('title-Dark');
 }
 
 const ChangeToDarkMode = () => {
-    // Change body style to light
+    // Change body style to dark
     document.body.classList.remove('body-Light');
     document.body.classList.add('body-Dark');
 
-    // Change header to light
+    // Change header to dark
     const header = document.querySelector('header');
     header.classList.add('header-Dark');
     header.classList.remove('header-Light');
+
+    // Change title to dark
+    const titleText = document.getElementById('title');
+    titleText.classList.add('title-Dark');
+    titleText.classList.remove('title-Light');
 }
 
 /// Animate button to show light mode

@@ -5,35 +5,40 @@ document.addEventListener('DOMContentLoaded', function() {
             title: 'Racerloop',
             description: 'A spaceship multiplayer game available on EPIC STORE.',
             imgSrc: 'Assets/Resources/Images/Gallery-03.jpg',
-            imgAlt: 'racerloop'
+            imgAlt: 'racerloop',
+            link: ''
         },
         {
             type: 'works',
             title: 'Otter\'s Hell',
             description: 'A Roguelite game of otters vs. hamsters.',
             imgSrc: 'Assets/Resources/OttersHell/OHGameplay_Card.png',
-            imgAlt: 'ottersHell'
+            imgAlt: 'ottersHell',
+            link: "../../Articles/HTML/Otter'sHell.html"
         },
         {
             type: 'personal',
             title: 'Goblin\'s Gold',
             description: 'A clicker game with RPG systems and too much goblins.',
             imgSrc: 'Assets/Resources/GoblinsGold/GoblinClicker_Card.png',
-            imgAlt: 'goblin'
+            imgAlt: 'goblin',
+            link: ''
         },
     ];
 
     function createProject(project) {
         return `
-            <article class="blog-card">
-                <div class="blog-card-img">
-                    <img src="${project.imgSrc}" alt="${project.imgAlt}">
-                </div>
-                <div class="blog-card-content">
-                    <h2 class="card-Title">${project.title}</h2>
-                    <p>${project.description}</p>
-                </div>
-            </article>
+            <a href="${project.link}">
+                <article class="blog-card">
+                    <div class="blog-card-img">
+                        <img src="${project.imgSrc}" alt="${project.imgAlt}">
+                    </div>
+                    <div class="blog-card-content">
+                        <h2 class="card-Title">${project.title}</h2>
+                        <p>${project.description}</p>
+                    </div>
+                </article>
+            </a>
         `;
     }
 

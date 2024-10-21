@@ -90,3 +90,12 @@
     color: #19191970;
     transition: background-color 0.3s ease;
 }
+
+/* Texts */
+.title-Dark{
+    color: #ffffff;
+}
+
+.title-Light{
+    color: #0b2141;
+}
