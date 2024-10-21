@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogArticleBase</title>
+    <link rel="icon" href="../Assets/Resources/Images/mano.png" type="image/x-icon">
+    <link rel="stylesheet" href="./CSS/ArticleStyle.css">
+    <link rel="stylesheet" href="./CSS/ArticleLightDark.css">
+</head>
+
+<body class="body-dark">
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <button class="logo empty-Button empty-Dark-Selected empty-Selected" id="home">
+                        <img src="../Assets/Resources/Images/mano.png" alt="Logo">
+                        Ignacio Meléndez
+                    </button>
+                </li>
+                <li><button class="empty-Button empty-Dark" id="portfolio">Portfolio</button></li>
+                <li><button class="empty-Button empty-Dark" id="blog">Blog</button></li>
+                <li><button onclick="toggleMode()" class="lightMode" id="modeButton">
+                    <img src="" alt="mode" id="modeImage">
+                </button></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <div class="header-spacer"></div>
+
+    <main>
+        <div id="article">
+            <section class="title" id="title">
+                <h1>Article Title</h1>
+                <h2>This is the Subtitle for the article</h2>
+                <h5>Published: Day-Month-Year</h5>
+                <img src="../Assets/Resources/OttersHell/Gameplay.png" alt="project-Image">
+            </section>
+        </div>
+
+        <div class="table-Content" id="Table of Content">
+            <h2>Table of Content</h2>
+            <ul>
+                <li><a href="#section1">Section 1</a></li>
+                <li><a href="#section2">Section 2</a></li>
+                <li><a href="#section3">Section 3</a></li>
+                <li><a href="#section4">Section 4</a></li>
+            </ul>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Ignacio Meléndez. All Rights Reserved.</p>
+    </footer>
+
+    <script src="./Scripts/ArticleToggleMode.js"></script>
+
+</body>
+</html>
