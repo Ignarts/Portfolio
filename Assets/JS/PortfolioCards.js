@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
             description: 'A spaceship multiplayer game available on EPIC STORE.',
             imgSrc: 'Assets/Resources/Images/Gallery-03.jpg',
             imgAlt: 'racerloop',
-            link: "../../Articles/HTML/Portfolio/Ptf_Racerloop.html"
+            link: "https://ignarts.github.io/Articles/HTML/Portfolio/Ptf_Racerloop.html"
         },
         {
             type: 'works',
