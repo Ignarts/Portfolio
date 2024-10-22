@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
             description: 'A spaceship multiplayer game available on EPIC STORE.',
             imgSrc: 'Assets/Resources/Images/Gallery-03.jpg',
             imgAlt: 'racerloop',
-            link: "https://ignarts.github.io/Portfolio/Articles/HTML/Portfolio/Ptf_Racerloop.html"
+            link: "../../Articles/HTML/Portfolio/Ptf_Racerloop.html"
         },
         {
             type: 'works',
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
     ];
 
     function createProject(project) {
-        const link = project.link ? `onclick="window.open('${project.link}', '_blank')"` : '';
+        const link = project.link ? `onclick="window.location.href='${project.link}'"` : '';
         return `
             <article class="blog-card"  ${link}>
                 <div class="blog-card-img">

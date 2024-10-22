@@ -1,5 +1,8 @@
+let lastSection;
+
 document.addEventListener('DOMContentLoaded', (event) => {
-    toggleSection('home');
+    localStorage.getItem('lastSection') ? lastSection = localStorage.getItem('lastSection') : lastSection = 'home';
+    toggleSection(lastSection);
 });
 
 function toggleSection(section) {
@@ -10,16 +13,22 @@ function toggleSection(section) {
 
     if (section === 'home') {
         ShowHome(homeSection, portfolioSection, blogSection, contactSection);
+        lastSection = 'home';
     } else if (section === 'portfolio') {
         ShowPortfolio(homeSection, portfolioSection, blogSection, contactSection);
+        lastSection = 'portfolio';
     }else if(section == 'blog'){
         ShowBlog(homeSection, portfolioSection, blogSection, contactSection);
+        lastSection = 'blog';
     }
     else if(section == 'contact'){
         ShowContact(homeSection, portfolioSection, blogSection, contactSection);
+        lastSection = 'contact';
     }
 
     HighlightButton(section);
+
+    localStorage.setItem('lastSection', lastSection);
 }
 
 const ShowHome = (homeSection, portfolioSection, blogSection, contactSection) => {
