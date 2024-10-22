@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogArticleBase</title>
+    <link rel="icon" href="../Assets/Resources/Images/mano.png" type="image/x-icon">
+    <link rel="stylesheet" href="./CSS/ArticleStyle.css">
+    <link rel="stylesheet" href="./CSS/ArticleLightDark.css">
+</head>
+
+<body class="body-dark">
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <button class="logo empty-Button empty-Dark-Selected empty-Selected" id="home">
+                        <img src="../Assets/Resources/Images/mano.png" alt="Logo">
+                        Ignacio Meléndez
+                    </button>
+                </li>
+                <li><button class="empty-Button empty-Dark" id="portfolio">Portfolio</button></li>
+                <li><button class="empty-Button empty-Dark" id="blog">Blog</button></li>
+                <li><button onclick="toggleMode()" class="lightMode" id="modeButton">
+                        <img src="" alt="mode" id="modeImage">
+                    </button></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <div class="header-spacer"></div>
+
+    <main>
+        <article>
+            <section class="title" id="title">
+                <section class="title-content">
+                    <h1>Article Title</h1>
+                    <h2>Skill 1 | Skill 2 | Skill 3...</h2>
+                    <h5>Published: Day-Month-Year</h5>
+                </section>
+                <img src="../Assets/Resources/OttersHell/Gameplay.png" alt="project-Image">
+            </section>
+
+            <section class="article" id="article">
+                <section class="article-content">
+                    <p>Explain the project in a few lines.</p>
+                    <ul class="skills">
+                        <li>
+                            <strong>Gameplay</strong>: Explain the gameplay mechanics and features.
+                        </li>
+                        
+                        <li>
+                            <strong>Technical aspects</strong>: Explain the technical aspects of the project.
+                        </li>
+                        
+                        <li>
+                            <strong>Key Skills</strong>: Explain the key skills used in the project.
+                        </li>
+                    </ul>
+
+
+            </section>
+        </article>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Ignacio Meléndez. All Rights Reserved.</p>
+    </footer>
+
+    <script src="./Scripts/ArticleToggleMode.js"></script>
+
+</body>
+
+</html>

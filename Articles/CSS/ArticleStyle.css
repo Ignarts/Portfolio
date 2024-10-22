@@ -165,6 +165,13 @@ footer {
     align-self: center;
 }
 
+/* Lists */
+.skills{
+    text-align: justify;
+    margin-left: 5%;
+    margin-top: 1rem;
+}
+
 /* Text Decorations */
 
 .link{
@@ -179,6 +186,10 @@ footer {
 
 strong{
     color: #64b4e6;
+}
+
+a{
+    text-decoration: none;
 }
 
 .space{

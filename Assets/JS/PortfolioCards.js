@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
             description: 'A spaceship multiplayer game available on EPIC STORE.',
             imgSrc: 'Assets/Resources/Images/Gallery-03.jpg',
             imgAlt: 'racerloop',
-            link: ''
+            link: "../../Articles/HTML/Portfolio/Ptf_Racerloop.html"
         },
         {
             type: 'works',
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
             description: 'A Roguelite game of otters vs. hamsters.',
             imgSrc: 'Assets/Resources/OttersHell/OHGameplay_Card.png',
             imgAlt: 'ottersHell',
-            link: "../../Articles/HTML/Otter'sHell.html"
+            link: "../../Articles/HTML/Portfolio/Ptf_Otters.html"
         },
         {
             type: 'personal',
@@ -27,18 +27,17 @@ document.addEventListener('DOMContentLoaded', function() {
     ];
 
     function createProject(project) {
+        const link = project.link ? `onclick="window.open('${project.link}', '_blank')"` : '';
         return `
-            <a href="${project.link}">
-                <article class="blog-card">
-                    <div class="blog-card-img">
-                        <img src="${project.imgSrc}" alt="${project.imgAlt}">
-                    </div>
-                    <div class="blog-card-content">
-                        <h2 class="card-Title">${project.title}</h2>
-                        <p>${project.description}</p>
-                    </div>
-                </article>
-            </a>
+            <article class="blog-card"  ${link}>
+                <div class="blog-card-img">
+                    <img src="${project.imgSrc}" alt="${project.imgAlt}">
+                </div>
+                <div class="blog-card-content">
+                    <h2 class="card-Title">${project.title}</h2>
+                    <p>${project.description}</p>
+                </div>
+            </article>
         `;
     }
 

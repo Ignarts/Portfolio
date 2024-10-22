@@ -53,7 +53,7 @@ const AnimateButtonToLightMode = () => {
     const modeButton = document.getElementById('modeButton');
     const modeImage = document.getElementById('modeImage');
 
-    modeImage.src = '../../Assets/Resources/Images/moon.svg';
+    modeImage.src = '../../../Assets/Resources/Images/moon.svg';
     isLightMode = true;
 
     modeImage.classList.remove('rotate-Negative90');
@@ -69,7 +69,7 @@ const AnimateButtonToDarkMode = () => {
     const modeButton = document.getElementById('modeButton');
     const modeImage = document.getElementById('modeImage');
 
-    modeImage.src = '../../Assets/Resources/Images/brightness-high.svg';
+    modeImage.src = '../../../Assets/Resources/Images/brightness-high.svg';
     isLightMode = false;
 
     modeImage.classList.remove('rotate-90');
