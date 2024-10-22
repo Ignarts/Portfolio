@@ -1,11 +1,12 @@
 /* Slideshow container */
 .slideshow-container {
-    width: 50%;
-    height: 20rem;
+    width: 70%;
+    height: 25rem;
     margin-top: 2rem;
     align-self: center;
     align-items: center;
     border-radius: 2rem;
+    justify-self: center;
 }
 
 /* Hide the images by default */
@@ -21,7 +22,7 @@
 
 @keyframes fade {
     from {
-        opacity: .4
+        opacity: 0
     }
 
     to {

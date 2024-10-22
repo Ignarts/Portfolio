@@ -196,6 +196,7 @@ a{
     margin-top: 2rem;
 }
 
+
 @media (width < 768px) {
     .text-with-image{
         flex-direction: column;
