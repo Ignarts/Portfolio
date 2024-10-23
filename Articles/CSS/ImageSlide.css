@@ -7,18 +7,29 @@
     align-items: center;
     border-radius: 2rem;
     justify-self: center;
-    background-color: tomato;
 }
 
 /* Hide the images by default */
 .mySlides {
+    width: 100%;
+    height: 20rem;
     display: none;
+    position: relative;
 }
 
 .mySlides img{
     border-radius: 2rem;
-    object-fit: cover;
+    object-fit: contain;
     align-self: center;
+}
+
+.mySlides p{
+    color: white;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
 }
 
 @keyframes fade {
