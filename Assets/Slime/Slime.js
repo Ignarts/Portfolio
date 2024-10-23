@@ -1,17 +1,31 @@
 // Variables to store data about the slime
-let happiness = 50;
-let energy = 50;
+let happiness;
+let energy;
 
 let cooldownTimer = 5000;
 let feedCooldown = false;
 let playCooldown = false;
 let restCooldown = false;
 
+document.addEventListener('DOMContentLoaded', (event) => {
+    if(localStorage.getItem('happiness')){
+        happiness = parseInt(localStorage.getItem('happiness'), 10);
+        if (isNaN(happiness)) happiness = 50; // Fallback to default if NaN
+    }
+
+    if(localStorage.getItem('energy')){
+        energy = parseInt(localStorage.getItem('energy'), 10);
+        if (isNaN(energy)) energy = 50; // Fallback to default if NaN
+    }
+
+    updateStats();
+});
+
 // Function to Feed the slime
 function feedSlime() {
     const feedButton = document.getElementById('feed-button');
     if (!feedCooldown) {
-        energy += 10;
+        energy = parseInt(energy, 10) + 10;
         if (energy > 100) energy = 100;
         updateStats();
         feedCooldown = true;
@@ -27,9 +41,9 @@ function feedSlime() {
 function playWithSlime() {
     const playButton = document.getElementById('play-button');
     if (!playCooldown) {
-        if (energy > 0) {
-            happiness += 10;
-            energy -= 10;
+        if (parseInt(energy, 10) > 0) {
+            happiness = parseInt(happiness, 10) + 10;
+            energy = parseInt(energy, 10) - 10;
             if (happiness > 100) happiness = 100;
             if (energy < 0) energy = 0;
             updateStats();
@@ -49,8 +63,8 @@ function playWithSlime() {
 function restSlime() {
     const restButton = document.getElementById('rest-button');
     if (!restCooldown) {
-        energy += 20;
-        happiness -= 5;
+        energy = parseInt(energy, 10) + 20;
+        happiness = parseInt(happiness, 10) - 5;
         if (energy > 100) energy = 100;
         if (happiness < 0) happiness = 0;
         updateStats();
@@ -67,6 +81,9 @@ function restSlime() {
 function updateStats() {
     document.getElementById('happiness').innerText = happiness;
     document.getElementById('energy').innerText = energy;
+
+    localStorage.setItem('happiness', happiness);
+    localStorage.setItem('energy', energy);
 }
 
 // Make Slime lose energy over time. If energy is low, make it lose happiness as well
@@ -82,4 +99,4 @@ setInterval(() => {
     }
 
     updateStats();
-}, 3000);
+}, 10000);
