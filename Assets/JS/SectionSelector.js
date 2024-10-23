@@ -1,8 +1,14 @@
-let lastSection;
-
 document.addEventListener('DOMContentLoaded', (event) => {
-    localStorage.getItem('lastSection') ? lastSection = localStorage.getItem('lastSection') : lastSection = 'home';
-    toggleSection(lastSection);
+    const lastSection = localStorage.getItem('lastSection');
+    const lastVisit = localStorage.getItem('lastVisit');
+    const now = new Date().getTime();
+    const THIRTY_MINUTES = 20 * 60 * 1000;
+
+    if (lastSection && lastVisit && (now - lastVisit < THIRTY_MINUTES)) {
+        toggleSection(lastSection);
+    } else {
+        toggleSection('home');
+    }
 });
 
 function toggleSection(section) {
@@ -13,22 +19,18 @@ function toggleSection(section) {
 
     if (section === 'home') {
         ShowHome(homeSection, portfolioSection, blogSection, contactSection);
-        lastSection = 'home';
     } else if (section === 'portfolio') {
         ShowPortfolio(homeSection, portfolioSection, blogSection, contactSection);
-        lastSection = 'portfolio';
-    }else if(section == 'blog'){
+    } else if (section === 'blog') {
         ShowBlog(homeSection, portfolioSection, blogSection, contactSection);
-        lastSection = 'blog';
-    }
-    else if(section == 'contact'){
+    } else if (section === 'contact') {
         ShowContact(homeSection, portfolioSection, blogSection, contactSection);
-        lastSection = 'contact';
     }
 
     HighlightButton(section);
 
-    localStorage.setItem('lastSection', lastSection);
+    localStorage.setItem('lastSection', section);
+    localStorage.setItem('lastVisit', new Date().getTime());
 }
 
 const ShowHome = (homeSection, portfolioSection, blogSection, contactSection) => {

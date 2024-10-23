@@ -1,12 +1,13 @@
 /* Slideshow container */
 .slideshow-container {
-    width: 70%;
-    height: 25rem;
+    width: 50%;
+    height: 20rem;
     margin-top: 2rem;
     align-self: center;
     align-items: center;
     border-radius: 2rem;
     justify-self: center;
+    background-color: tomato;
 }
 
 /* Hide the images by default */
