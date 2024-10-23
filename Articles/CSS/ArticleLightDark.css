@@ -99,3 +99,12 @@
 .title-Light{
     color: #0b2141;
 }
+
+/* Text decorations */
+.strong-Dark{
+    color: #64b4e6;
+}
+
+.strong-Light{
+    color: #f0b427;
+}

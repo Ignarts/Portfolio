@@ -30,6 +30,13 @@ const ChangeToLightMode = () => {
     const titleText = document.getElementById('title');
     titleText.classList.add('title-Light');
     titleText.classList.remove('title-Dark');
+
+    // Change strong tags to light
+    const strongElements = document.querySelectorAll('strong');
+    strongElements.forEach(element => {
+        element.classList.add('strong-Light');
+        element.classList.remove('strong-Dark');
+    });
 }
 
 const ChangeToDarkMode = () => {
@@ -46,6 +53,13 @@ const ChangeToDarkMode = () => {
     const titleText = document.getElementById('title');
     titleText.classList.add('title-Dark');
     titleText.classList.remove('title-Light');
+
+    // Change strong tags to dark
+    const strongElements = document.querySelectorAll('strong');
+    strongElements.forEach(element => {
+        element.classList.add('strong-Dark');
+        element.classList.remove('strong-Light');
+    });
 }
 
 /// Animate button to show light mode
