@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="Assets/CSS/Contact.css">
     <link rel="stylesheet" href="Assets/Slime/SlimeStyle.css">
     <link rel="stylesheet" href="Assets/CSS/LightDarkMode.css">
+    <link rel="stylesheet" href="./Articles/CSS/ImageSlide.css">
 </head>
 
 <body class="body-Dark">
@@ -20,12 +21,14 @@
         <nav>
             <ul>
                 <li>
-                    <button onclick="toggleSection('home')" class="logo empty-Button empty-Dark-Selected empty-Selected" id="home">
+                    <button onclick="toggleSection('home')" class="logo empty-Button empty-Dark-Selected empty-Selected"
+                        id="home">
                         <img src="Assets/Resources/Images/mano.png" alt="Logo">
                         Ignacio Meléndez
                     </button>
                 </li>
-                <li><button onclick="toggleSection('portfolio')" class="empty-Button empty-Dark" id="portfolio">Portfolio</button></li>
+                <li><button onclick="toggleSection('portfolio')" class="empty-Button empty-Dark"
+                        id="portfolio">Portfolio</button></li>
                 <li><button onclick="toggleSection('blog')" class="empty-Button empty-Dark" id="blog">Blog</button></li>
                 <!-- <li><button onclick="toggleSection('contact')" class="empty-Button empty-Dark" id="contact">Contact</button></li> -->
                 <li><button onclick="toggleMode()" class="lightMode" id="modeButton">
@@ -35,7 +38,7 @@
         </nav>
 
     </header>
-    
+
     <div class="header-spacer"></div>
 
     <!-- Slime Simulator -->
@@ -73,17 +76,18 @@
             <section class="section">
                 <h2>WORK</h2>
                 <p>I'm <strong>Ignacio Meléndez</strong>, a professional developer with almost 3
-                    years of experience building applications using <strong>Unity</strong> and <strong>C#</strong>. During this time, I have been
+                    years of experience building applications using <strong>Unity</strong> and <strong>C#</strong>.
+                    During this time, I have been
                     involved in several notable projects.
 
                 <p>I worked as lead programmer, project manager and producer for a Roguelite game, managing a team
                     of 8 people. In addition, I worked as a gameplay and UI/UX programmer for a multiplayer
                     spaceship racing game called
                     <a href="https://store.epicgames.com/es-ES/p/racerloop-4d3ab2" class="links" id="link"
-                    target="_blank">Racerloop</a>,
+                        target="_blank">Racerloop</a>,
                     collaborating with a team of more than 15 members. This project, available on the <i>EPIC Games</i>
                     platform, also included contributions to multiplayer systems.
-                
+
                 <p>I am well versed in version control practices and use tools such as Git, Git Extensions, GitHub
                     and Plastic. I am organized, disciplined and work well in a team, I excel in code documentation,
                     technical troubleshooting and game performance optimization.
@@ -97,29 +101,56 @@
                         <li>
                             <p class="year">December 2023 - Present</p>
                             <p class="job-info"><strong>JUNIOR PROGRAMMER, Nexxyolabs</strong><br>
-                            Junior Programmer  at 
-                            <a href="https://store.epicgames.com/es-ES/p/racerloop-4d3ab2" class="links" id="link"target="_blank">Racerloop</a>
-                            (space ship racing multiplayer game). Programming UI, player experience, gameplay and multiplayer.</p>
+                                Junior Programmer at
+                                <a href="https://store.epicgames.com/es-ES/p/racerloop-4d3ab2" class="links" id="link"
+                                    target="_blank">Racerloop</a>
+                                (space ship racing multiplayer game). Programming UI, player experience, gameplay and
+                                multiplayer.
+                            </p>
                         </li>
                         <li>
                             <p class="year">2021-2023</p>
                             <p class="job-info"><strong>PROJECT DIRECTOR AND LEAD PROGRAMMER, Nexxyolabs</strong><br>
-                            Director and Producer in a team of 8 people. Programming leader. Developing Otter's Hell, a Roguelite
-                            otter vs. hamster game where you will conquer planets while you will conquer planets while saving baby otters
-                            from the clutches of the hamster empire.</p>
+                                Director and Producer in a team of 8 people. Programming leader. Developing Otter's
+                                Hell, a Roguelite
+                                otter vs. hamster game where you will conquer planets while you will conquer planets
+                                while saving baby otters
+                                from the clutches of the hamster empire.</p>
                         </li>
                         <li>
                             <p class="year">2015-2018</p>
                             <p class="job-info"><strong>TEAM MEMBER, FS-Ingenium Team</strong><br>
-                            Programming Leader, 2015-2017. <br>
-                            Mentor, 2018. <br>
-                            Best Mechanical Design Award at the World Cup in Saint Luis, USA, 2016. <br>
-                            Robot Behaviour Award at the World Cup in Detroit, USA, 2018.
+                                Programming Leader, 2015-2017. <br>
+                                Mentor, 2018. <br>
+                                Best Mechanical Design Award at the World Cup in Saint Luis, USA, 2016. <br>
+                                Robot Behaviour Award at the World Cup in Detroit, USA, 2018.
                             </p>
                         </li>
                     </ul>
                 </section>
             </section>
+            
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+
+                <!-- Full-width images with caption text -->
+                <div class="mySlides">
+                    <img src="./Assets/Resources/OttersHell/Gameplay.png" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="./Articles/Assets/RacerloopScreenshot6.png" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="./Articles/Assets/OHScreenshot3.png" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="./Articles/Assets/OHScreenshot2.png" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="./Articles/Assets/RacerloopScreenshot2.jpg" style="width:100%">
+                </div>
+            </div>
+
         </section>
 
         <!-- This is the Portfolio section -->
@@ -158,7 +189,7 @@
                         <p>Explain</p>
                         <textarea name="Explain" id="" placeholder="Write here your thoughts..."></textarea>
                     </form>
-                    
+
                     <button class="form-Button button-Dark">Send</button>
                 </section>
             </section>
@@ -173,6 +204,8 @@
             </section>
         </section>
 
+        </section>
+
     </main>
 
     <footer>
@@ -183,6 +216,7 @@
     <script src="Assets/JS/SectionSelector.js"></script>
     <script src="Assets/JS/PortfolioCards.js"></script>
     <script src="Assets/JS/BlogArticleCreator.js"></script>
+    <script src="./Articles/Scripts/AutomaticSlide.js"></script>
     <script src="Assets/Slime/Slime.js" defer></script>
     <script src="Assets/Slime/SlimeAnimations.js"></script>
     <script src="Assets/JS/LightDarkMode.js"></script>
