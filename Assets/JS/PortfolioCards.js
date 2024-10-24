@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
             description: 'A spaceship multiplayer game available on EPIC STORE.',
             imgSrc: 'Assets/Resources/Images/Gallery-03.jpg',
             imgAlt: 'racerloop',
-            link: "../../Articles/HTML/Portfolio/Ptf_Racerloop.html"
+            link: "/Portfolio/Articles/HTML/Portfolio/Ptf_Racerloop.html"
         },
         {
             type: 'works',
@@ -14,15 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
             description: 'A Roguelite game of otters vs. hamsters.',
             imgSrc: 'Assets/Resources/OttersHell/OHGameplay_Card.png',
             imgAlt: 'ottersHell',
-            link: "../../Articles/HTML/Portfolio/Ptf_Otters.html"
-        },
-        {
-            type: 'personal',
-            title: 'Goblin\'s Gold',
-            description: 'A clicker game with RPG systems and too much goblins.',
-            imgSrc: 'Assets/Resources/GoblinsGold/GoblinClicker_Card.png',
-            imgAlt: 'goblin',
-            link: ''
+            link: "/Portfolio/Articles/HTML/Portfolio/Ptf_Otters.html"
         },
     ];
 
