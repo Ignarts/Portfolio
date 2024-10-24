@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function renderProjects() {
         const worksContainer = document.getElementById('works-projects');
-        const personalContainer = document.getElementById('personal-projects');
+        //const personalContainer = document.getElementById('personal-projects');
 
         projects.forEach(project => {
             const projectHTML = createProject(project);
