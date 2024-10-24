@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
             imgSrc: 'Assets/Resources/OttersHell/OHGameplay_Card.png',
             imgAlt: 'ottersHell',
             type: 'Games',
-            link: '../../Articles/HTML/Blog/Bg_OttersHell.html'
+            link: '/Portfolio/Articles/HTML/Blog/Bg_OttersHell.html'
         }
     ]
 
